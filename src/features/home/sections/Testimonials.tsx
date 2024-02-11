@@ -2,7 +2,6 @@ import Img from '@/shared/Img';
 import Heading from '@/shared/Modal/Heading';
 import UnleashCard from '@/shared/cards/UnleashCard';
 import React from 'react';
-import InstagramEmbed from 'react-instagram-embed';
 const Testimonials = () => {
   const stats = [
     { title: 'YEARS OF EXPERIENCE', value: '10+' },
@@ -95,7 +94,6 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      
     </div>
   );
 };

@@ -5,7 +5,6 @@ import OriginalTaste from './sections/OriginalTaste';
 import WideRange from './sections/WideRange';
 import Guaranteed from './sections/Guaranteed';
 import Testimonials from './sections/Testimonials';
-import InstagramEmbed from 'react-instagram-embed';
 
 const Home = () => {
   return (
@@ -16,21 +15,6 @@ const Home = () => {
       <WideRange />
       <Guaranteed />
       <Testimonials />
-      <div className='bg-red-400'>
-        <InstagramEmbed
-          url='https://instagr.am/p/Zn1Xz/'
-          clientAccessToken='123|456'
-          maxWidth={320}
-          hideCaption={false}
-          containerTagName='div'
-          protocol=''
-          injectScript
-          onLoading={() => {}}
-          onSuccess={() => {}}
-          onAfterRender={() => {}}
-          onFailure={() => {}}
-        />
-      </div>
     </div>
   );
 };
