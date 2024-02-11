@@ -32,7 +32,7 @@ const Guaranteed = () => {
           />
           <p className='text-white'>
             Craving a delicious burger? We guarantee hot, fresh burgers
-            delivered to your door in under 30 minutes when you're within 5 km.
+            delivered to your door in under 30 minutes when you&apos;re within 5 km.
             Order now and satisfy your hunger quickly!
           </p>
 
