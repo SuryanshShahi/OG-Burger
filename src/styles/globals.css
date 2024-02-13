@@ -55,7 +55,7 @@
 
 #navbar.active {
   animation: fadeNav 0.6s linear forwards;
-  @apply shadow-cardShadow h-24;
+  @apply shadow-cardShadow h-24 bg-white text-black;
 }
 
 @keyframes fadeNav {

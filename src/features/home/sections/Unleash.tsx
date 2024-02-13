@@ -10,13 +10,13 @@ const Unleash = () => {
     { icon: '/icons/delivery.png', title: 'Fastest Delivery' },
   ];
   return (
-    <div className='lg:grid grid-cols-2 !mx-auto place-items-center max-w-[1220px] gap-14 px-5'>
-      <div className='flex sm:flex-row flex-col max-[640px]:justify-between gap-6'>
-        <Heading
-          title='Join the Burger Revolution'
-          subTitle='UNLEASH THE INNER og foodie!'
-          className='sm:hidden text-center'
-        />
+    <div className='lg:grid grid-cols-2 mx-auto place-items-center container gap-14'>
+      <Heading
+        title='Join the Burger Revolution'
+        subTitle='UNLEASH THE INNER og foodie!'
+        className='lg:hidden text-center mb-8'
+      />
+      <div className='flex sm:flex-row flex-col max-[640px]:justify-between gap-6 justify-center'>
         <Img
           src={'/images/unleash1.png'}
           alt='phone'
@@ -34,7 +34,7 @@ const Unleash = () => {
             isLocal
             className='max-w-[212px] max-h-[176px]'
           />
-          <div className='bg-primary max-h-[176px] max-w-[212px] w-full flex justify-center items-center rounded-lg'>
+          <div className='bg-primary max-h-[176px] max-w-[212px] w-full sm:h-full flex justify-center items-center rounded-lg'>
             <Img
               src={'/icons/logo.png'}
               alt='phone'
@@ -45,11 +45,11 @@ const Unleash = () => {
           </div>
         </div>
       </div>
-      <div className='space-y-6 max-w-[630px]'>
+      <div className='space-y-6 max-w-[630px] mx-auto'>
         <Heading
           title='Join the Burger Revolution'
           subTitle='UNLEASH THE INNER og foodie!'
-          className='sm:block hidden'
+          className='lg:block hidden'
         />
         <p className='font-medium text-gray-600 leading-[25px]'>
           Welcome to The OG Burger, where tradition meets innovation in the

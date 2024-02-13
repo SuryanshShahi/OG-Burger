@@ -12,7 +12,7 @@ const Navbar = ({
   btnClass?: string;
 }) => {
   const router = useRouter();
-  const {} = useNavbar();
+  const { isActive } = useNavbar();
   const navItems = [
     { name: 'ABOUT', link: '/' },
     { name: 'MENU', link: '/menu' },
@@ -27,7 +27,9 @@ const Navbar = ({
       <div className='flex justify-between items-center max-w-[1200px] mx-auto w-full'>
         <Img
           src={
-            router?.pathname === '/menu' || router?.pathname === '/contact'
+            router?.pathname === '/menu' ||
+            router?.pathname === '/contact' ||
+            isActive
               ? '/icons/logoRed.png'
               : '/icons/logo.png'
           }
@@ -48,7 +50,15 @@ const Navbar = ({
               {item?.name}
             </div>
           ))}
-          <Button className={btnClass}>Order Online</Button>
+          <Button
+            className={
+              isActive
+                ? 'bg-primary text-white'
+                : btnClass
+            }
+          >
+            Order Online
+          </Button>
         </div>
       </div>
     </div>
