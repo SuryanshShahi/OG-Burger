@@ -1,5 +1,5 @@
-import React from 'react';
-import Img from '../Img';
+import React from "react";
+import Img from "../Img";
 
 const Tabs = ({
   data,
@@ -17,13 +17,15 @@ const Tabs = ({
     >
       <Img
         src={data?.image}
-        alt='veg'
+        alt="veg"
         height={26}
         width={34}
         isLocal
-        className='max-h-[26px] max-w-[50px] object-contain'
+        className="max-h-[26px] max-w-[50px] object-contain"
       />
-      <div className='text-xl font-BebasNeue leading-5 mt-1'>{data?.title}</div>
+      <div className="text-xl font-BebasNeue leading-5 mt-1 text-nowrap">
+        {data}
+      </div>
     </div>
   );
 };

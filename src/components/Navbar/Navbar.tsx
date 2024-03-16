@@ -16,13 +16,13 @@ const Navbar = ({
   const navItems = [
     { name: 'ABOUT', link: '/' },
     { name: 'MENU', link: '/menu' },
-    { name: 'FRANCHISE', link: '/' },
-    { name: 'CONTACT US', link: '/contact' },
+    { name: 'FRANCHISE', link: '/contact' },
+    { name: 'CONTACT US', link: '#footer' },
   ];
   return (
     <div
       id='navbar'
-      className={`bg-primary px-4 h-28 top-0 sticky z-20 duration-500 flex items-center text-white ${className}`}
+      className={`bg-primary px-4 h-24 top-0 sticky z-20 duration-500 flex items-center text-white ${className}`}
     >
       <div className='flex justify-between items-center max-w-[1200px] mx-auto w-full'>
         <Img
