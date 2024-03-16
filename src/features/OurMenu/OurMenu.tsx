@@ -52,7 +52,15 @@ const OurMenu = () => {
                     {item1?.title}
                   </div>
                   {item1?.varients?.map((item2: any, idx2: number) => (
-                    <MenuCard data={item2} key={idx2} />
+                    <MenuCard
+                      data={item2}
+                      key={idx2}
+                      isNonVeg={
+                        item1?.title?.toLowerCase()?.includes("non-veg") ||
+                        item1?.title?.toLowerCase()?.includes("chicken") ||
+                        item1?.title?.toLowerCase()?.includes("egg")
+                      }
+                    />
                   ))}
                 </div>
               ))}

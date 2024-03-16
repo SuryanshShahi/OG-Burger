@@ -11,30 +11,26 @@ import { errorType, touchedType, inputType } from "@/utils/Functions";
 const ContactUs = () => {
   const [isActive, setIsActive] = useState("");
   useScrollHidden(isActive?.length > 0);
-  const InputFields = {
-    title: "Let’s Get Started",
-    image: "/images/course6.png",
-    inputs: [
-      {
-        label: "Name",
-        placeholder: "Enter Your Name",
-        icon: "/images/message.png",
-        type: "text",
-      },
-      {
-        label: "State",
-        placeholder: "Enter State",
-        icon: "/images/message.png",
-        type: "email",
-      },
-      {
-        label: "Email ID",
-        placeholder: "Enter Your Email ID",
-        icon: "/images/message.png",
-        type: "email",
-      },
-    ],
-  };
+  const InputFields = [
+    {
+      label: "Name",
+      placeholder: "Enter Your Name",
+      icon: "/icons/message.png",
+      type: "text",
+    },
+    {
+      label: "State",
+      placeholder: "Enter State",
+      icon: "/icons/message.png",
+      type: "text",
+    },
+    {
+      label: "Email ID",
+      placeholder: "Enter Your Email ID",
+      icon: "/icons/message.png",
+      type: "email",
+    },
+  ];
 
   const data = [
     {
@@ -235,7 +231,7 @@ const ContactUs = () => {
             <b> franchise</b> agents and start your journey with the OG Burger
           </p>
           <div className="grid md:grid-cols-2 gap-x-6">
-            {InputFields?.inputs?.map((item: any, idx: number) => (
+            {InputFields?.map((item: any, idx: number) => (
               <div className="space-y-1" key={idx}>
                 <h4 className="text-xs font-medium">
                   {item?.label} <span className="text-red-600">*</span>

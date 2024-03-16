@@ -1,7 +1,8 @@
-export const MENU_DATA:any = {
+export const MENU_DATA: any = {
   Beverages: [
     {
       title: "MOCKTAILS",
+      icon: "/images/menuItems/Death By Chocolate.png",
       varients: [
         {
           title: "Cucumber Lime ",
@@ -42,7 +43,7 @@ export const MENU_DATA:any = {
       title: "SHAKES",
       varients: [
         {
-          title: "Vanilla Shake ",
+          title: "Vanilla Shake",
           price: 115,
         },
         {
@@ -135,6 +136,7 @@ export const MENU_DATA:any = {
   Pizza: [
     {
       title: "Veg PIZZA",
+      icon: "/images/menuItems/pizza.png",
       varients: [
         {
           title: "Margherita Pizza",
@@ -172,9 +174,10 @@ export const MENU_DATA:any = {
   Waffles: [
     {
       title: "WAFFLES",
+      icon: "/images/menuItems/waffels.png",
       varients: [
         {
-          title: "Mapple Syrup Waffle ",
+          title: "Mapple Syrup Waffle",
           price: 175,
         },
         {
@@ -199,6 +202,7 @@ export const MENU_DATA:any = {
   Sandwich: [
     {
       title: "Veg SANDWHICH",
+      icon: "/images/menuItems/sandwich.png",
       varients: [
         {
           title: "Classic Veg Sandwhich",
@@ -282,6 +286,7 @@ export const MENU_DATA:any = {
   Appetizer: [
     {
       title: "Veg Appetizer",
+      icon: "/images/menuItems/fries.png",
       varients: [
         {
           title: "Chilli Garlic Pops",
@@ -327,6 +332,8 @@ export const MENU_DATA:any = {
   "Wraps and Fries": [
     {
       title: "Veg WRAPS",
+      icon: "/images/menuItems/tortilla.png",
+
       varients: [
         {
           title: "Grilled Onion & Peppers",
@@ -361,7 +368,7 @@ export const MENU_DATA:any = {
       title: "Fries",
       varients: [
         {
-          title: "Sorted Fries",
+          title: "Salted Fries",
           price: 95,
         },
         {
@@ -375,9 +382,10 @@ export const MENU_DATA:any = {
       ],
     },
   ],
-  "Veg Burger & Paneer Burger ": [
+  "Veg Burger & Paneer Burger": [
     {
       title: "Veg Burger",
+      icon: "/images/menuItems/burger.png",
       varients: [
         {
           title: "Aloo Tikki",
@@ -422,7 +430,7 @@ export const MENU_DATA:any = {
           price: 135,
         },
         {
-          title: "Wrath of Burger ",
+          title: "Wrath of Burger",
           description:
             "Spicy veg patty , Spicy sauces, Red paprika , Onions , Iceberg , jalapenos in a perfectly toasted bun ",
           price: 145,
@@ -469,7 +477,7 @@ export const MENU_DATA:any = {
           price: 155,
         },
         {
-          title: "Paneer Tikka ",
+          title: "Paneer Tikka",
           description:
             "House - Buttered buns , tikka flavoured paneer patty , onions , lettuce & handcrafted cilantro & mint chutney ",
           price: 165,
@@ -491,7 +499,7 @@ export const MENU_DATA:any = {
           price: 85,
         },
         {
-          title: "Hen - sational ",
+          title: "Hen - sational",
           Spicy: "(Mild Spicy)",
           description:
             "Grilled spicy Chicken Patty , spicy sauces , Onions , Tomatoes & Iceberg Lettuce",
@@ -514,27 +522,27 @@ export const MENU_DATA:any = {
           price: 155,
         },
         {
-          title: "Crispy Clucker ",
+          title: "Crispy Clucker",
           Spicy: " (Mild Spicy)",
           description: "Fried Chicken Patty,Gherkins/Lettuce& assorted Veggies",
           price: 165,
         },
         {
-          title: "Chicken Tikka ",
+          title: "Chicken Tikka",
           Spicy: "( Mild Spicy)",
           description:
             "Chicken Tikka Patty, handcrafted Cilantro&Mint chutney , Lettuce & Onions",
           price: 165,
         },
         {
-          title: "Fiery Clucker ",
-          Spicy: " (Very Spicy)",
+          title: "Fiery Clucker",
+          Spicy: "(Very Spicy)",
           description:
             "Deep fried crispy chicken patty sprinkled with Peri-Peri, Lettuce, Onions& Sauces",
           price: 175,
         },
         {
-          title: "Fire Bird ",
+          title: "Fire Bird",
           Spicy: "(Very Spicy)",
           description:
             "Chicken marinated & cooked in Peri-Peri Spices/ Lettuce & Onions",
@@ -568,28 +576,58 @@ export const MENU_DATA:any = {
   ],
   Pastas: [
     {
-      title: "Pastas",
+      title: "Veg Pastas",
+      icon: "/images/menuItems/pasta.png",
       varients: [
         {
-          title: "Alfredo ",
+          title: "Alfredo Veg",
           description:
             "White sauce pasta tossed with Bell Peppers and Zucchini ",
           price: 235,
         },
         {
-          title: "Arrabbiata",
+          title: "Arrabbiata Veg",
           description:
             "Spicy Pomodoro (Red Sauce) , Dried Redd Chilli Peppers cooked in Olive Oil",
           price: 235,
         },
         {
-          title: "Mamma Rosa",
+          title: "Mamma Rosa Veg",
           description:
             "Mixed sauce pasta with Broccoli, Zucchini and Bell Peppers",
           price: 235,
         },
         {
-          title: "Pomodoro",
+          title: "Pomodoro Veg",
+          description:
+            "Pasta tossed with Fresh Tomatoes, Olive oil , basil and Italian Herbs",
+          price: 235,
+        },
+      ],
+    },
+    {
+      title: "Non-veg Pastas",
+      varients: [
+        {
+          title: "Alfredo Non-Veg",
+          description:
+            "White sauce pasta tossed with Bell Peppers and Zucchini ",
+          price: 235,
+        },
+        {
+          title: "Arrabbiata Non-Veg",
+          description:
+            "Spicy Pomodoro (Red Sauce) , Dried Redd Chilli Peppers cooked in Olive Oil",
+          price: 235,
+        },
+        {
+          title: "Mamma Rosa Non-Veg",
+          description:
+            "Mixed sauce pasta with Broccoli, Zucchini and Bell Peppers",
+          price: 235,
+        },
+        {
+          title: "Pomodoro Non-Veg",
           description:
             "Pasta tossed with Fresh Tomatoes, Olive oil , basil and Italian Herbs",
           price: 235,
