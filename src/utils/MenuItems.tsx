@@ -1,4 +1,4 @@
-export const MENU_DATA = {
+export const MENU_DATA:any = {
   Beverages: [
     {
       title: "MOCKTAILS",
