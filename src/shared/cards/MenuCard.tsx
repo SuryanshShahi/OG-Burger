@@ -9,14 +9,13 @@ const MenuCard = ({
   isNonVeg: boolean;
 }) => {
   return (
-    <div className="flex gap-x-5 max-w-[564px] justify-between">
+    <div className="flex gap-x-5 font-prompt max-w-[564px] justify-between">
       <div className="space-y-2">
         <Img
           src={isNonVeg ? "/icons/nonVeg.png" : "/icons/veg.png"}
           alt="veg"
           height={16}
           width={16}
-          isLocal
         />
         <div className="text-[18px] font-semibold">{data?.title}</div>
         <div className="font-medium">₹ {data?.price}</div>
@@ -27,7 +26,6 @@ const MenuCard = ({
         alt={data?.title}
         height={130}
         width={130}
-        isLocal
         className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
       />
     </div>

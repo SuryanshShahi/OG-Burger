@@ -29,17 +29,16 @@ const Footer = () => {
                 height={105}
                 width={95}
                 alt="heroImage"
-                isLocal
               />
-              <p className="font-medium mt-4 text-[#fafafa]">
+              <p className="font-medium mt-4 font-prompt text-[#fafafa]">
                 Welcome to The OG Burger, where tradition meets innovation in
                 the world of burgers. Our passion lies in preserving the
                 timeless flavors of classic burgers while constantly pushing the
                 boundaries of culinary creativity.
               </p>
             </div>
-            <div className="list-none space-y-3 lg:col-span-2 sm:col-span-4 col-span-6 order-2">
-              <div className="text-primary text-2xl mb-4 font-BebasNeue">
+            <div className="list-none space-y-3 font-prompt lg:col-span-2 sm:col-span-4 col-span-6 order-2">
+              <div className="text-primary text-2xl mb-4 font-oswald">
                 Explore
               </div>
               {["Home", "About Us", "Menu", "Franchise", "Contact us"]?.map(
@@ -55,23 +54,23 @@ const Footer = () => {
               )}
             </div>
             <div className="list-none space-y-3 lg:col-span-4 sm:col-span-8 col-span-12 sm:order-3 order-4">
-              <div className="text-primary text-2xl mb-4 font-BebasNeue">
+              <div className="text-primary text-2xl mb-4 font-oswald">
                 Contact Us
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 font-prompt">
                 <div>
-                  <div className="text-lg font-BebasNeue">Address</div>
+                  <div className="text-lg font-oswald">Address</div>
                   <p className="font-medium text-[#fafafa]">
                     CB4, DLF Cybercity, DLF Phase 2, Sector 24, Gurugram,
                     Haryana 122022
                   </p>
                 </div>
                 <div>
-                  <div className="text-lg font-BebasNeue">Phone</div>
+                  <div className="text-lg font-oswald">Phone</div>
                   <p className="font-medium text-[#fafafa]">+91 70111 61527</p>
                 </div>
                 <div>
-                  <div className="text-lg font-BebasNeue">Email</div>
+                  <div className="text-lg font-oswald">Email</div>
                   <p className="font-medium text-[#fafafa]">
                     contact@theogburger.co.in
                   </p>
@@ -79,24 +78,22 @@ const Footer = () => {
               </div>
             </div>
             <div className="list-none space-y-3 lg:col-span-2 sm:col-span-4 col-span-6 sm:order-4 order-3">
-              <div className="text-primary text-2xl mb-4 font-BebasNeue">
+              <div className="text-primary text-2xl mb-4 font-oswald">
                 Opening Hours
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 font-prompt">
                 <div>
-                  <div className="text-lg font-BebasNeue">
-                    Monday - Saturday
-                  </div>
+                  <div className="text-lg font-oswald">Monday - Saturday</div>
                   <p className="font-medium text-[#fafafa]">10 AM - 11 PM</p>
                 </div>
                 <div>
-                  <div className="text-lg font-BebasNeue">Sunday</div>
+                  <div className="text-lg font-oswald">Sunday</div>
                   <p className="font-medium text-[#fafafa]">11 AM - 12 PM</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex sm:flex-row font-medium text-gray-300 flex-col sm:justify-between items-center gap-y-4 py-10">
+          <div className="flex font-prompt sm:flex-row font-medium text-gray-300 flex-col sm:justify-between items-center gap-y-4 py-10">
             <div className="">
               Copyright © 2023 The OG Burger. All rights reserved
             </div>
@@ -113,13 +110,7 @@ const Footer = () => {
                   className="h-[32px] cursor-pointer hover:rotate-[360deg] duration-500 flex items-center justify-center w-[32px] rounded-full bg-[#222]"
                   key={idx}
                 >
-                  <Img
-                    src={item}
-                    height={16}
-                    width={16}
-                    alt="heroImage"
-                    isLocal
-                  />
+                  <Img src={item} height={16} width={16} alt="heroImage" />
                 </div>
               ))}
             </div>

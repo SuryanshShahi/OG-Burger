@@ -2,7 +2,8 @@ import Img from "@/shared/Img";
 import Heading from "@/shared/Modal/Heading";
 import OriginalTasteCard from "@/shared/cards/OriginalTasteCard";
 import React, { useEffect, useRef, useState } from "react";
-
+import { motion } from "framer-motion";
+import { OgVariants } from "@/utils/framerVarients";
 const OriginalTaste = () => {
   const images = [
     {
@@ -78,7 +79,6 @@ const OriginalTaste = () => {
       observer.disconnect();
     };
   }, []);
-  console.log({ visible });
   return (
     <div className="bg-[#222] py-28 px-5 relative" ref={ref}>
       <Img
@@ -86,7 +86,6 @@ const OriginalTaste = () => {
         alt="phone"
         width={1440}
         height={85}
-        isLocal
         className="w-full absolute -top-1 left-0"
       />
       <div className="container mx-auto space-y-10">
@@ -94,18 +93,17 @@ const OriginalTaste = () => {
           title="The Original Taste"
           subTitle="WHat Makes “OG” BURGERS THE BEST"
           styleSubTitle="text-white"
-          className="text-center"
+          className="text-center sm:mb-0 mb-20"
         />
-        <div className="relative lg:hidden flex justify-center max-w-[432px] w-full mx-auto">
+        <div className="relative lg:hidden sm:flex hidden items-center justify-center max-w-[432px] w-full mx-auto">
           <Img
             src="/icons/originalTestBg.png"
             alt="original"
             height={432}
             width={432}
-            isLocal
             className="mx-auto h-[432px] w-fit"
           />
-          <div className="absolute top-4">
+          <div className="absolute group cursor-grab mt-6">
             {images?.map((item: any, idx: number) => (
               <Img
                 key={idx}
@@ -113,14 +111,22 @@ const OriginalTaste = () => {
                 alt="original"
                 height={item?.height}
                 width={item?.width}
-                isLocal
-                className={`-mt-4 ml-[42px] ${item?.className}`}
+                className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
+                  visible ? "-mt-4" : "-mt-12"
+                } ${item?.className}`}
+                // className={`-mt-4 ml-[42px] ${item?.className}`}
               />
             ))}
           </div>
         </div>
-        <div className="flex sm:flex-row flex-col items-center sm:justify-between gap-x-10">
-          <div className="flex flex-col justify-between space-y-20">
+        <div className="flex sm:flex-row flex-col items-center sm:justify-between gap-10">
+          <motion.div
+            viewport={{ once: true }}
+            variants={OgVariants.LEFT}
+            whileInView="show"
+            initial="hidden"
+            className="flex flex-col justify-between space-y-20"
+          >
             <OriginalTasteCard
               count="01"
               title="Original Taste Legacy"
@@ -131,14 +137,13 @@ const OriginalTaste = () => {
               title="Longtime Tradition"
               description="Our dishes are steeped in rich history, delivering a taste of the past on every plate."
             />
-          </div>
-          <div className="relative justify-center items-center max-w-[432px] w-full lg:flex hidden">
+          </motion.div>
+          <div className="relative justify-center items-center max-w-[432px] w-full lg:flex sm:hidden flex sm:mt-0 mt-10">
             <Img
               src="/icons/originalTestBg.png"
               alt="original"
               height={432}
               width={432}
-              isLocal
               className="mx-auto lg:!h-[432px] lg:!w-[432px]"
             />
             <div className="absolute group cursor-grab mt-6">
@@ -149,7 +154,6 @@ const OriginalTaste = () => {
                   alt="original"
                   height={item?.height}
                   width={item?.width}
-                  isLocal
                   className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
                     visible ? "-mt-4" : "-mt-12"
                   } ${item?.className}`}
@@ -157,7 +161,13 @@ const OriginalTaste = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col justify-between space-y-20 sm:mt-0 mt-20">
+          <motion.div
+            viewport={{ once: true }}
+            variants={OgVariants.RIGHT}
+            whileInView="show"
+            initial="hidden"
+            className="flex flex-col justify-between space-y-20 sm:mt-0 mt-20"
+          >
             <OriginalTasteCard
               count="03"
               title="Real Ingredients Always"
@@ -170,7 +180,7 @@ const OriginalTaste = () => {
               description="With each bite, you can count on the consistent, top-notch quality that has become our trademark."
               rightAligned
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <Img
@@ -178,7 +188,6 @@ const OriginalTaste = () => {
         alt="phone"
         width={1440}
         height={85}
-        isLocal
         className="w-full absolute bottom-0 left-0"
       />
     </div>

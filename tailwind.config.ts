@@ -27,9 +27,11 @@ const config: Config = {
       },
     },
     fontFamily: {
-      BebasNeue: "BebasNeue",
+      oswald: "oswald",
       hyberBlaster: "hyberBlaster",
       saint: "saint",
+      prompt: "prompt",
+      monoton: "monoton",
     },
   },
   plugins: [],

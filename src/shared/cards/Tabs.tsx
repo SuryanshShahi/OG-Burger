@@ -21,10 +21,9 @@ const Tabs = ({
         alt="veg"
         height={26}
         width={34}
-        isLocal
         className="max-h-[26px] max-w-[50px] object-contain"
       />
-      <div className="text-xl font-BebasNeue leading-5 mt-1 text-nowrap">
+      <div className="text-xl font-oswald uppercase leading-5 text-nowrap">
         {data}
       </div>
     </div>

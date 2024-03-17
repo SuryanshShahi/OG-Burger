@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Heading = ({
   title,
@@ -20,7 +20,9 @@ const Heading = ({
       >
         {title}
       </div>
-      <h1 className={`text-[40px] leading-[56px] font-BebasNeue -mt-5 ${styleSubTitle}`}>
+      <h1
+        className={`text-[40px] font-semibold uppercase leading-10 font-oswald -mt-5 ${styleSubTitle}`}
+      >
         {subTitle}
       </h1>
     </div>

@@ -21,14 +21,13 @@ const Guaranteed = () => {
           alt="guaranteed"
           height={510}
           width={507}
-          isLocal
           className="lg:max-h-[510px] lg:max-w-[507px] max-h-[410px] max-w-[407px] mt-auto lg:block hidden"
         />
-        <div className="space-y-8 pb-24 my-auto sm:min-w-[400px] lg:text-start text-center z-[2]">
+        <div className="space-y-8 font-prompt pb-24 my-auto sm:min-w-[400px] lg:text-start text-center z-[2]">
           <Heading
             title="Guaranteed"
             subTitle="Your Favorite Burgers Delivered AT YOUR DOORSTEP"
-            styleSubTitle="text-white lg:max-w-[478px] leading-[40px] "
+            styleSubTitle="text-white leading-[40px] "
           />
           <p className="text-white">
             Craving a delicious burger? We guarantee hot, fresh burgers

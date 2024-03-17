@@ -13,7 +13,7 @@ const Img = ({
   isLocal,
   ...props
 }: IImg): ReactElement => {
-  const sourcePrefix = process.env.NEXT_PUBLIC_BASE_URL;
+  const sourcePrefix = "https://ik.imagekit.io/designkrunch";
   const source = !isLocal && src ? `${sourcePrefix}${src}` : src;
   return (
     <Image src={source} alt={alt} width={width} height={height} {...props} />

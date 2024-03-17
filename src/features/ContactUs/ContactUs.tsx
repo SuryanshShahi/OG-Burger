@@ -7,7 +7,8 @@ import useScrollHidden from "@/utils/hooks/useScrollHidden";
 import React, { useState } from "react";
 import useContactUs from "./useContactUs";
 import { errorType, touchedType, inputType } from "@/utils/Functions";
-
+import { OgVariants } from "@/utils/framerVarients";
+import { motion } from "framer-motion";
 const ContactUs = () => {
   const [isActive, setIsActive] = useState("");
   useScrollHidden(isActive?.length > 0);
@@ -121,7 +122,7 @@ const ContactUs = () => {
     <div>
       <div className='relative bg-[url("/images/contactBg.png")] h-[320px] bg-cover flex justify-center items-center'>
         <div className="h-[320px] w-full bg-[rgb(0,0,0,0.3)] absolute"></div>
-        <div className="text-white text-center sm:text-[58px] text-4xl font-bold z-10">
+        <div className="text-white text-center font-prompt sm:text-[58px] text-4xl font-bold z-10">
           Join the OG Family
         </div>
         <Img
@@ -129,13 +130,18 @@ const ContactUs = () => {
           alt="phone"
           width={1440}
           height={85}
-          isLocal
           className="w-full absolute bottom-0"
         />
       </div>
 
       <div className="container mx-auto space-y-24 px-5 my-16">
-        <div className="space-y-16">
+        <motion.div
+          viewport={{ once: true }}
+          variants={OgVariants.CONTAINER}
+          whileInView="show"
+          initial="hidden"
+          className="space-y-16"
+        >
           <Heading
             title="Join the Burger Revolution"
             subTitle="UNLEASH THE INNER og foodie!"
@@ -151,15 +157,21 @@ const ContactUs = () => {
               />
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap gap-10 justify-center xl:justify-between">
+        <motion.div
+          viewport={{ once: true }}
+          variants={OgVariants.CONTAINER}
+          whileInView="show"
+          initial="hidden"
+          className="flex flex-wrap gap-10 justify-center font-prompt xl:justify-between"
+        >
           {plans?.map((item: any, idx: number) => (
             <div
               className="p-8 rounded-b-lg duration-500 rounded-t-xl space-y-8 shadow-cardShadow border-t-2 border-t-primary"
               key={idx}
             >
-              <div className="text-5xl leading-[48px] font-BebasNeue">
+              <div className="text-5xl leading-[48px] font-oswald">
                 {item?.title}
               </div>
               <Img
@@ -167,7 +179,6 @@ const ContactUs = () => {
                 alt="phone"
                 width={317}
                 height={175}
-                isLocal
                 className="rounded-2xl max-h-[175px] w-full"
               />
               <div className="text-xs">
@@ -181,13 +192,7 @@ const ContactUs = () => {
                 <div className="font-bold">What you get</div>
                 {item?.specs?.map((item1: any, idx1: number) => (
                   <div className="flex items-center gap-x-4" key={idx1}>
-                    <Img
-                      src={item1?.icon}
-                      alt="specs"
-                      width={24}
-                      height={24}
-                      isLocal
-                    />
+                    <Img src={item1?.icon} alt="specs" width={24} height={24} />
                     <div>{item1?.value}</div>
                   </div>
                 ))}
@@ -205,14 +210,13 @@ const ContactUs = () => {
                     alt="phone"
                     width={16}
                     height={16}
-                    isLocal
                   />
                 </div>
                 Enquire Now
               </Button>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
       {isActive && (
         <Modal
@@ -267,7 +271,6 @@ const ContactUs = () => {
                     height={16}
                     width={16}
                     alt="heroImage"
-                    isLocal
                     className="absolute top-3 left-4"
                   />
                 </div>
@@ -308,7 +311,6 @@ const ContactUs = () => {
                   height={16}
                   width={16}
                   alt="heroImage"
-                  isLocal
                   className="absolute top-[14px] left-4"
                 />
               </div>
