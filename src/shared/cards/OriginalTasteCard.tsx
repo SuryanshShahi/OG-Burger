@@ -1,5 +1,6 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { OgVariants } from "@/utils/framerVarients";
 const OriginalTasteCard = ({
   count,
   title,
@@ -12,7 +13,13 @@ const OriginalTasteCard = ({
   rightAligned?: boolean;
 }) => {
   return (
-    <div className="relative max-w-[350px]">
+    <motion.div
+      viewport={{ once: true }}
+      variants={OgVariants.CONTAINER}
+      whileInView="show"
+      initial="hidden"
+      className="relative max-w-[350px]"
+    >
       <div
         className={`absolute text-[80px] font-monoton text-primary opacity-20 -top-14  ${
           rightAligned ? "right-0" : "left-0"
@@ -28,7 +35,7 @@ const OriginalTasteCard = ({
         </h4>
         <p className="text-[#fafafa] font-medium font-prompt">{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,8 +2,6 @@ import Img from "@/shared/Img";
 import Heading from "@/shared/Modal/Heading";
 import OriginalTasteCard from "@/shared/cards/OriginalTasteCard";
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { OgVariants } from "@/utils/framerVarients";
 const OriginalTaste = () => {
   const images = [
     {
@@ -56,7 +54,6 @@ const OriginalTaste = () => {
   ];
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -114,19 +111,12 @@ const OriginalTaste = () => {
                 className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
                   visible ? "-mt-4" : "-mt-12"
                 } ${item?.className}`}
-                // className={`-mt-4 ml-[42px] ${item?.className}`}
               />
             ))}
           </div>
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:justify-between gap-10">
-          <motion.div
-            viewport={{ once: true }}
-            variants={OgVariants.LEFT}
-            whileInView="show"
-            initial="hidden"
-            className="flex flex-col justify-between space-y-20"
-          >
+          <div className="flex flex-col justify-between space-y-20">
             <OriginalTasteCard
               count="01"
               title="Original Taste Legacy"
@@ -137,8 +127,8 @@ const OriginalTaste = () => {
               title="Longtime Tradition"
               description="Our dishes are steeped in rich history, delivering a taste of the past on every plate."
             />
-          </motion.div>
-          <div className="relative justify-center items-center max-w-[432px] w-full lg:flex sm:hidden flex sm:mt-0 mt-10">
+          </div>
+          <div className="relative md:scale-[1.2] justify-center items-center max-w-[432px] w-full lg:flex sm:hidden flex mt-10">
             <Img
               src="/icons/originalTestBg.png"
               alt="original"
@@ -161,13 +151,7 @@ const OriginalTaste = () => {
               ))}
             </div>
           </div>
-          <motion.div
-            viewport={{ once: true }}
-            variants={OgVariants.RIGHT}
-            whileInView="show"
-            initial="hidden"
-            className="flex flex-col justify-between space-y-20 sm:mt-0 mt-20"
-          >
+          <div className="flex flex-col justify-between space-y-20 sm:mt-0 mt-20">
             <OriginalTasteCard
               count="03"
               title="Real Ingredients Always"
@@ -180,7 +164,7 @@ const OriginalTaste = () => {
               description="With each bite, you can count on the consistent, top-notch quality that has become our trademark."
               rightAligned
             />
-          </motion.div>
+          </div>
         </div>
       </div>
       <Img
