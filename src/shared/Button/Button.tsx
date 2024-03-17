@@ -1,12 +1,12 @@
-import { FC, PropsWithChildren } from 'react';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
-import styles from './styles';
+import { FC, PropsWithChildren } from "react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import styles from "./styles";
 interface IButton {
-  variant?: 'gray' | 'primary' | 'white' | 'transparent' | 'outline';
+  variant?: "gray" | "primary" | "white" | "transparent" | "outline";
   className?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
-  type?: 'submit' | 'button' | 'reset';
+  type?: "submit" | "button" | "reset";
   onClick?: () => void;
   toolTip?: string;
   isLoading?: boolean;
@@ -32,7 +32,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
   return (
     <button
       style={style}
-      type={type ?? 'button'}
+      type={type ?? "button"}
       className={styles.buttonClass(
         fullWidth,
         size,
@@ -44,7 +44,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
       title={toolTip}
     >
       {isLoading ? (
-        <AiOutlineLoading3Quarters className='mx-auto h-6 animate-spin' />
+        <AiOutlineLoading3Quarters className="mx-auto h-6 animate-spin" />
       ) : (
         children
       )}
