@@ -57,6 +57,7 @@ const OurMenu = () => {
                       variants={OgVariants.CONTAINER}
                       whileInView="show"
                       initial="hidden"
+                      key={idx2}
                     >
                       <MenuCard
                         data={item2}
