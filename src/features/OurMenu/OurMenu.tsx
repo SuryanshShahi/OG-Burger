@@ -20,6 +20,7 @@ const OurMenu = () => {
         <div className="text-white text-[58px] font-bold z-10">Our Menu</div>
         <Img
           src={"/icons/white_bottom.png"}
+          isLocal
           alt="phone"
           width={1440}
           height={85}
@@ -76,7 +77,13 @@ const OurMenu = () => {
           ))}
         </div>
         <Button className="font-semibold !bg-[#121212] hover:!bg-[#121212]/80 flex items-center gap-x-2 h-12 rounded-3xl px-6 mx-auto mt-10">
-          <Img src="/icons/dineIn.png" alt="phone" width={18} height={18} />
+          <Img
+            src="/icons/dineIn.png"
+            alt="phone"
+            width={18}
+            height={18}
+            isLocal
+          />
           See Dine-In Menu
         </Button>
       </div>

@@ -98,6 +98,7 @@ const WideRange = () => {
           <div className="h-5 w-5 bg-white rounded-full flex items-center justify-center">
             <Img
               src="/icons/arrowDiagonal.png"
+              isLocal
               alt="phone"
               width={16}
               height={16}
@@ -109,7 +110,13 @@ const WideRange = () => {
           onClick={() => router.push("/menu")}
           className="font-semibold !bg-[#121212] hover:!bg-[#121212]/80 flex items-center gap-x-2 h-12 rounded-3xl px-6"
         >
-          <Img src="/icons/dineIn.png" alt="phone" width={18} height={18} />
+          <Img
+            src="/icons/dineIn.png"
+            alt="phone"
+            width={18}
+            height={18}
+            isLocal
+          />
           See Dine-In Menu
         </Button>
       </div>

@@ -17,6 +17,7 @@ const UnleashCard = ({
             alt="phone"
             width={38}
             height={38}
+            isLocal
             className="sm:w-[38px] sm:h-[38px] w-6 h-6"
           />
         </div>

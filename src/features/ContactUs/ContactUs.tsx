@@ -127,6 +127,7 @@ const ContactUs = () => {
         </div>
         <Img
           src={"/icons/white_bottom.png"}
+          isLocal
           alt="phone"
           width={1440}
           height={85}
@@ -192,7 +193,7 @@ const ContactUs = () => {
                 <div className="font-bold">What you get</div>
                 {item?.specs?.map((item1: any, idx1: number) => (
                   <div className="flex items-center gap-x-4" key={idx1}>
-                    <Img src={item1?.icon} alt="specs" width={24} height={24} />
+                    <Img src={item1?.icon} alt="specs" width={24} height={24} isLocal/>
                     <div>{item1?.value}</div>
                   </div>
                 ))}
@@ -207,6 +208,7 @@ const ContactUs = () => {
                 <div className="h-5 w-5 bg-white rounded-full flex items-center justify-center">
                   <Img
                     src="/icons/arrowDiagonal.png"
+                    isLocal
                     alt="phone"
                     width={16}
                     height={16}

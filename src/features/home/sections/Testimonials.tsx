@@ -60,6 +60,7 @@ const Testimonials = () => {
           >
             <Img
               src={"/icons/quotes.png"}
+              isLocal
               alt="phone"
               width={60}
               height={53}
@@ -73,6 +74,7 @@ const Testimonials = () => {
                 {item?.rating?.map((e: number, idx1: number) => (
                   <Img
                     src={"/icons/star.png"}
+                    isLocal
                     alt="phone"
                     width={16}
                     height={16}

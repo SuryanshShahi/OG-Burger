@@ -33,7 +33,13 @@ const Unleash = () => {
             className="max-w-[212px] max-h-[176px]"
           />
           <div className="bg-primary max-h-[176px] max-w-[212px] w-full sm:h-full flex justify-center items-center rounded-lg">
-            <Img src={"/icons/logo.png"} alt="phone" width={120} height={130} />
+            <Img
+              src={"/icons/logo.png"}
+              alt="phone"
+              width={120}
+              height={130}
+              isLocal
+            />
           </div>
         </div>
       </div>

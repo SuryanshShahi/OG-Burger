@@ -27,7 +27,7 @@ const Navbar = ({
         id="navbar"
         className={`bg-primary px-4 h-24 top-0 sticky z-20 duration-500 flex items-center text-white ${className}`}
       >
-        <div className="flex justify-between items-center max-w-[1200px] mx-auto w-full">
+        <div className="flex justify-between items-center container mx-auto w-full">
           <Img
             src={
               router?.pathname === "/menu" ||
@@ -36,6 +36,7 @@ const Navbar = ({
                 ? "/icons/logoRed.png"
                 : "/icons/logo.png"
             }
+            isLocal
             alt="phone"
             width={71}
             height={77}
@@ -76,6 +77,7 @@ const Navbar = ({
         >
           <Img
             src={"/icons/logoRed.png"}
+            isLocal
             alt="phone"
             width={71}
             height={77}

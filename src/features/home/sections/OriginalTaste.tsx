@@ -80,6 +80,7 @@ const OriginalTaste = () => {
     <div className="bg-[#222] py-28 px-5 relative" ref={ref}>
       <Img
         src={"/icons/white_bottom2.png"}
+        isLocal
         alt="phone"
         width={1440}
         height={85}
@@ -95,6 +96,7 @@ const OriginalTaste = () => {
         <div className="relative lg:hidden sm:flex hidden items-center justify-center max-w-[432px] w-full mx-auto">
           <Img
             src="/icons/originalTestBg.png"
+            isLocal
             alt="original"
             height={432}
             width={432}
@@ -131,6 +133,7 @@ const OriginalTaste = () => {
           <div className="relative md:scale-[1.2] justify-center items-center max-w-[432px] w-full lg:flex sm:hidden flex mt-10">
             <Img
               src="/icons/originalTestBg.png"
+              isLocal
               alt="original"
               height={432}
               width={432}
@@ -169,6 +172,7 @@ const OriginalTaste = () => {
       </div>
       <Img
         src={"/icons/white_bottom.png"}
+        isLocal
         alt="phone"
         width={1440}
         height={85}

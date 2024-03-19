@@ -13,6 +13,7 @@ const MenuCard = ({
       <div className="space-y-2">
         <Img
           src={isNonVeg ? "/icons/nonVeg.png" : "/icons/veg.png"}
+          isLocal
           alt="veg"
           height={16}
           width={16}

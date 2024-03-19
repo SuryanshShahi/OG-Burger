@@ -26,6 +26,7 @@ const Footer = () => {
             <div className="lg:col-span-4 sm:col-span-8 col-span-12 order-1">
               <Img
                 src={"/icons/logoRed.png"}
+                isLocal
                 height={105}
                 width={95}
                 alt="heroImage"
@@ -110,7 +111,7 @@ const Footer = () => {
                   className="h-[32px] cursor-pointer hover:rotate-[360deg] duration-500 flex items-center justify-center w-[32px] rounded-full bg-[#222]"
                   key={idx}
                 >
-                  <Img src={item} height={16} width={16} alt="heroImage" />
+                  <Img src={item} height={16} width={16} alt="heroImage" isLocal/>
                 </div>
               ))}
             </div>
