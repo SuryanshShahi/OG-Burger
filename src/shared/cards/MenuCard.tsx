@@ -23,7 +23,7 @@ const MenuCard = ({
         <p className="text-xs text-gray-600">{data?.description}</p>
       </div>
       <Img
-        src={`/images/menuItems/${data?.title}.png`}
+        src={`/${data?.title}.png`}
         alt={data?.title}
         height={130}
         width={130}
