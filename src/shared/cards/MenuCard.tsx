@@ -20,6 +20,7 @@ const MenuCard = ({
   };
 
   return (
+
     <div className="flex gap-x-5 font-prompt max-w-[564px] justify-between">
       <div className="space-y-2">
         <Img
@@ -29,10 +30,12 @@ const MenuCard = ({
           height={16}
           width={16}
         />
+        
         <div className="text-[18px] font-semibold">{data?.title}</div>
         <div className="font-medium">₹ {data?.price}</div>
         <p className="text-xs text-gray-600">{data?.description}</p>
       </div>
+
       {!imageError && (
         <Img
           src={`/images/Menu/${url}.jpg?tr=w-512,h-512`}
@@ -44,6 +47,7 @@ const MenuCard = ({
           unoptimized
         />
       )}
+
       {imageError && (
         <Image
           src="/fallback.png" // Provide the path to your fallback image
@@ -54,6 +58,7 @@ const MenuCard = ({
         />
       )}
     </div>
+
   );
 };
 

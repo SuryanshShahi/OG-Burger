@@ -13,7 +13,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Watermelon mojito",
+          title: "Watermelon Mojito",
           price: 125,
         },
         {
@@ -21,7 +21,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Blue Ocean ",
+          title: "Blue Ocean",
           price: 135,
         },
         {
@@ -63,11 +63,11 @@ export const MENU_DATA: any = {
           price: 135,
         },
         {
-          title: "Mixed Berry Shake ",
+          title: "Mixed Berry Shake",
           price: 145,
         },
         {
-          title: "Death By Chocolate",
+          title: "Death By Chocolate Shake",
           price: 145,
         },
       ],
@@ -77,15 +77,15 @@ export const MENU_DATA: any = {
       title: "Coffee",
       varients: [
         {
-          title: "Classic Hot Coffee (Hot)",
+          title: "Classic Hot Coffee-Hot",
           price: 75,
         },
         {
-          title: "Caramel Coffee (Hot)",
+          title: "Caramel Coffee-Hot",
           price: 85,
         },
         {
-          title: "Hazelnut Coffee (Hot)",
+          title: "Hazelnut Coffee-Hot",
           price: 85,
         },
         {
@@ -107,15 +107,15 @@ export const MENU_DATA: any = {
       title: "Tea",
       varients: [
         {
-          title: "Green Tea (Hot)",
+          title: "Green Tea-Hot",
           price: 45,
         },
         {
-          title: "Masala Tea (Hot)",
+          title: "Masala Tea-Hot",
           price: 65,
         },
         {
-          title: "English Breakfast Tea (Hot)",
+          title: "English Breakfast Tea-Hot",
           price: 65,
         },
         {
@@ -133,13 +133,13 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Pizza: [
+  Pizzas: [
     {
       title: "Veg Pizza",
       icon: "/images/menuItems/pizza.png",
       varients: [
         {
-          title: "Margherita Pizza",
+          title: "Margherita",
           price: 185,
         },
         {
@@ -147,11 +147,11 @@ export const MENU_DATA: any = {
           price: 215,
         },
         {
-          title: "BBQ Panner ",
+          title: "BBQ Paneer",
           price: 235,
         },
         {
-          title: "Chipotle Panner",
+          title: "Chipotle Paneer",
           price: 235,
         },
       ],
@@ -178,7 +178,7 @@ export const MENU_DATA: any = {
       icon: "/images/menuItems/waffels.png",
       varients: [
         {
-          title: "Mapple Syrup Waffle",
+          title: "Maple Syrup Waffle",
           price: 175,
         },
         {
@@ -226,7 +226,7 @@ export const MENU_DATA: any = {
       title: "Pancakes",
       varients: [
         {
-          title: "Breakfast Panckae",
+          title: "Breakfast Pancak  e",
           price: 155,
         },
         {
@@ -271,7 +271,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "Non-veg Sandwich",
+      title: "Non-Veg Sandwich",
       varients: [
         {
           title: "Scrambled Egg Sandwich",
@@ -285,7 +285,7 @@ export const MENU_DATA: any = {
     },
   ],
 
-  Appetizer: [
+  Appetizers: [
     {
       title: "Veg Appetizer",
       icon: "/images/menuItems/fries.png",
@@ -310,7 +310,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "Non-veg Appetizer",
+      title: "Non-Veg Appetizer",
       varients: [
         {
           title: "Chicken Popcorns",
@@ -388,7 +388,7 @@ export const MENU_DATA: any = {
   ],
   Burgers: [
     {
-      title: "Veg Burger",
+      title: "Veg Burgers",
       icon: "/images/menuItems/burger.png",
       varients: [
         {
@@ -454,7 +454,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Paneer Burger ",
+      title: "Paneer Burgers ",
       varients: [
         {
           title: "Mint Paneer",
@@ -489,7 +489,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Chicken Burger",
+      title: "Chicken Burgers",
       varients: [
         {
           title: "Chicken Boom",
@@ -555,7 +555,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Egg Burger",
+      title: "Egg Burgers",
       varients: [
         {
           title: "Breakfast King",
@@ -580,7 +580,7 @@ export const MENU_DATA: any = {
   ],
   Pastas: [
     {
-      title: "Veg Pastas",
+      title: "Veg Pasta",
       icon: "/images/menuItems/pasta.png",
       varients: [
         {
@@ -610,7 +610,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Non-veg Pastas",
+      title: "Non-Veg Pasta",
       varients: [
         {
           title: "Alfredo Non-Veg",
