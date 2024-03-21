@@ -53,7 +53,7 @@ const MenuCard = ({
         />
       )} */}
       <Img
-          src={`/images/Menu/${url}.png?tr=w-512,h-512`}
+          src={`/images/Menu/${url}.jpg?tr=w-512,h-512`}
           alt={data?.title}
           height={130}
           width={130}
