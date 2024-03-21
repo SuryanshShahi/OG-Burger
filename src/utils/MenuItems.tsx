@@ -5,7 +5,7 @@ export const MENU_DATA: any = {
       icon: "/images/menuItems/Death By Chocolate.png",
       varients: [
         {
-          title: "Cucumber Lime ",
+          title: "Cucumber Lime",
           price: 115,
         },
         {
@@ -17,7 +17,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Minty mango",
+          title: "Minty Mango",
           price: 125,
         },
         {
@@ -29,7 +29,7 @@ export const MENU_DATA: any = {
           price: 135,
         },
         {
-          title: "Sunset glory",
+          title: "Sunset Glory",
           price: 135,
         },
         {
@@ -51,7 +51,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Banana Carmel Shake",
+          title: "Banana Caramel Shake",
           price: 135,
         },
         {
