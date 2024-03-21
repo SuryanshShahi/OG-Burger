@@ -1,7 +1,7 @@
 export const MENU_DATA: any = {
   Beverages: [
     {
-      title: "MOCKTAILS",
+      title: "Mocktails",
       icon: "/images/menuItems/Death By Chocolate.png",
       varients: [
         {
@@ -40,7 +40,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "SHAKES",
+      title: "Shakes",
       varients: [
         {
           title: "Vanilla Shake",
@@ -74,7 +74,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "COFFEE",
+      title: "Coffee",
       varients: [
         {
           title: "Classic Hot Coffee (Hot)",
@@ -104,7 +104,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "TEA",
+      title: "Tea",
       varients: [
         {
           title: "Green Tea (Hot)",
@@ -135,7 +135,7 @@ export const MENU_DATA: any = {
   ],
   Pizza: [
     {
-      title: "Veg PIZZA",
+      title: "Veg Pizza",
       icon: "/images/menuItems/pizza.png",
       varients: [
         {
@@ -158,7 +158,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "Non-veg PIZZA",
+      title: "Non Veg Pizza",
       varients: [
         {
           title: "Chicken Carne",
@@ -171,9 +171,10 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Waffles: [
+
+  Desserts: [
     {
-      title: "WAFFLES",
+      title: "Waffles",
       icon: "/images/menuItems/waffels.png",
       varients: [
         {
@@ -185,7 +186,7 @@ export const MENU_DATA: any = {
           price: 185,
         },
         {
-          title: "Nutellea & Banana Waffle",
+          title: "Nutella & Banana Waffle",
           price: 205,
         },
         {
@@ -198,7 +199,53 @@ export const MENU_DATA: any = {
         },
       ],
     },
+
+    {
+      title: "Cheesecakes",
+      varients: [
+        {
+          title: "Caramel Cheese Cake",
+          price: 225,
+        },
+        {
+          title: "Stawberry Cheese Cake",
+          price: 225,
+        },
+        {
+          title: "Belgium Chocolate Cheese Cake",
+          price: 235,
+        },
+        {
+          title: "Lotus Biscoff Cheese Cake",
+          price: 235,
+        },
+      ],
+    },
+
+    {
+      title: "Pancakes",
+      varients: [
+        {
+          title: "Breakfast Panckae",
+          price: 155,
+        },
+        {
+          title: "Blueberries Pancake",
+          price: 165,
+        },
+        {
+          title: "Nutella Pancake",
+          price: 175,
+        },
+        {
+          title: "Lotus Biscoff Pancake",
+          price: 185,
+        },
+      ],
+    },
   ],
+
+
   Sandwich: [
     {
       title: "Veg Sandwich",
@@ -237,52 +284,7 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Cheesecake: [
-    {
-      title: "CHESSECAKE",
-      varients: [
-        {
-          title: "Caramel Chesse Cake",
-          price: 225,
-        },
-        {
-          title: "Stawberry Chesse Cake",
-          price: 225,
-        },
-        {
-          title: "Belgium Chocolate Chesse Cake",
-          price: 235,
-        },
-        {
-          title: "Lotus Biscoff Chesse Cake",
-          price: 235,
-        },
-      ],
-    },
-  ],
-  Pancakes: [
-    {
-      title: "Pancakes",
-      varients: [
-        {
-          title: "Breakfast Panckae",
-          price: 155,
-        },
-        {
-          title: "Blueberries Pancake",
-          price: 165,
-        },
-        {
-          title: "Nutella Pancake",
-          price: 175,
-        },
-        {
-          title: "Lotus Biscoff Pancake",
-          price: 185,
-        },
-      ],
-    },
-  ],
+
   Appetizer: [
     {
       title: "Veg Appetizer",
