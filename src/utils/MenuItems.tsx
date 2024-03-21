@@ -201,37 +201,37 @@ export const MENU_DATA: any = {
   ],
   Sandwich: [
     {
-      title: "Veg SANDWHICH",
+      title: "Veg Sandwich",
       icon: "/images/menuItems/sandwich.png",
       varients: [
         {
-          title: "Classic Veg Sandwhich",
+          title: "Classic Veg Sandwich",
           price: 115,
         },
         {
-          title: "Bombay Masala Sandwhich",
+          title: "Bombay Masala Sandwich",
           price: 125,
         },
         {
-          title: "Jalapeno Chesse Sandwhich",
+          title: "Jalapeno Chesse Sandwich",
           price: 135,
         },
         {
-          title: "Paneer Tikka Sanwhich",
+          title: "Paneer Tikka Sandwich",
           price: 155,
         },
       ],
     },
 
     {
-      title: "Non-veg SANDWHICH",
+      title: "Non-veg Sandwich",
       varients: [
         {
-          title: "Scramled Egg Sandwhich",
+          title: "Scramled Egg Sandwich",
           price: 145,
         },
         {
-          title: "Chicken Tikka Sandwhich",
+          title: "Chicken Tikka Sandwich",
           price: 165,
         },
       ],
@@ -344,7 +344,7 @@ export const MENU_DATA: any = {
           price: 165,
         },
         {
-          title: "Spicy Paneer",
+          title: "BBQ Spicy Paneer",
           price: 165,
         },
       ],
@@ -412,7 +412,7 @@ export const MENU_DATA: any = {
           price: 95,
         },
         {
-          title: "Jalapeno Kick",
+          title: "Jalapeno Kick Sunrise",
           description:
             "Fresh Iceberg Lettuce, Tomatoes , Compliment Juicy Patties , with fresh onions,zesty jalapenos",
           price: 105,
@@ -471,7 +471,7 @@ export const MENU_DATA: any = {
           price: 145,
         },
         {
-          title: "Peri-fect Paneer",
+          title: "Peri-Fect Paneer",
           description:
             "Peri-peri marinated paneer patty, topped with lettuce , tomatoes, onion & spicy sauces",
           price: 155,

@@ -1,5 +1,6 @@
-import React from "react";
+import React , { useState } from "react";
 import Img from "../Img";
+import Image from "next/image";
 
 const MenuCard = ({
   data,
@@ -8,6 +9,12 @@ const MenuCard = ({
   data: { title: string; description: string; price: number };
   isNonVeg: boolean;
 }) => {
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
   return (
     <div className="flex gap-x-5 font-prompt max-w-[564px] justify-between">
       <div className="space-y-2">
@@ -22,13 +29,25 @@ const MenuCard = ({
         <div className="font-medium">₹ {data?.price}</div>
         <p className="text-xs text-gray-600">{data?.description}</p>
       </div>
-      <Img
-        src={`/images/menuItems/${data?.title}.png`}
-        alt={data?.title}
-        height={130}
-        width={130}
-        className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
-      />
+      {!imageError && (
+        <Image
+          src={`https://ik.imagekit.io/designkrunch/theogburger/images/menuItems/${data?.title}.png`}
+          onError={handleImageError}
+          alt={data?.title}
+          height={130}
+          width={130}
+          className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
+        />
+      )}
+      {imageError && (
+        <Image
+          src="/fallback.png" // Provide the path to your fallback image
+          alt="Fallback Image"
+          height={130}
+          width={130}
+          className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
+        />
+      )}
     </div>
   );
 };
