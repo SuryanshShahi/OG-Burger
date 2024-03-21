@@ -208,7 +208,7 @@ export const MENU_DATA: any = {
           price: 225,
         },
         {
-          title: "Stawberry Cheese Cake",
+          title: "Strawberry Cheese Cake",
           price: 225,
         },
         {
@@ -260,7 +260,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Jalapeno Chesse Sandwich",
+          title: "Jalapeno Cheese Sandwich",
           price: 135,
         },
         {
@@ -274,7 +274,7 @@ export const MENU_DATA: any = {
       title: "Non-veg Sandwich",
       varients: [
         {
-          title: "Scramled Egg Sandwich",
+          title: "Scrambled Egg Sandwich",
           price: 145,
         },
         {
@@ -303,7 +303,7 @@ export const MENU_DATA: any = {
           price: 115,
         },
         {
-          title: "Chesse Coins",
+          title: "Cheese Coins",
           price: 125,
         },
       ],
@@ -330,10 +330,29 @@ export const MENU_DATA: any = {
         },
       ],
     },
-  ],
-  "Wraps and Fries": [
+
     {
-      title: "Veg WRAPS",
+      title: "Fries",
+      varients: [
+        {
+          title: "Salted Fries",
+          price: 95,
+        },
+        {
+          title: "Peri-Peri Fries",
+          price: 105,
+        },
+        {
+          title: "Cheese Loaded Fries",
+          price: 135,
+        },
+      ],
+    },
+  ],
+
+  Wraps: [
+    {
+      title: "Veg Wraps",
       icon: "/images/menuItems/tortilla.png",
 
       varients: [
@@ -353,7 +372,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "Non-veg Wraps",
+      title: "Non-Veg Wraps",
       varients: [
         {
           title: "BBQ Chicken",
@@ -366,25 +385,8 @@ export const MENU_DATA: any = {
       ],
     },
 
-    {
-      title: "Fries",
-      varients: [
-        {
-          title: "Salted Fries",
-          price: 95,
-        },
-        {
-          title: "Peri-Peri Fries",
-          price: 105,
-        },
-        {
-          title: "Chesse Loaded Fries",
-          price: 135,
-        },
-      ],
-    },
   ],
-  "Veg Burger & Paneer Burger": [
+  Burgers: [
     {
       title: "Veg Burger",
       icon: "/images/menuItems/burger.png",
@@ -392,13 +394,13 @@ export const MENU_DATA: any = {
         {
           title: "Aloo Tikki",
           description:
-            "Crispy Aloo Tikki Cutlet patty , Topped with Pickeles ,  Chessy Sauce , Tomatoes & Onions in a buttery bun",
+            "Crispy Aloo Tikki Cutlet patty , Topped with Pickeles ,  Cheesy Sauce , Tomatoes & Onions in a buttery bun",
           price: 35,
         },
         {
           title: "Potato Crunch",
           description:
-            "Herb Patty , Chesse Sauce & Fresh Toppings nestled on a Butter Toasted Bun",
+            "Herb Patty , Cheese Sauce & Fresh Toppings nestled on a Butter Toasted Bun",
           price: 65,
         },
         {
@@ -422,13 +424,13 @@ export const MENU_DATA: any = {
         {
           title: "Route 66",
           description:
-            "Artisnal Bun dressed in chesse sauce , Jalapeno , Red Paprika , gourmet veg patty , raddish & Gherkins",
+            "Artisnal Bun dressed in Cheese sauce , Jalapeno , Red Paprika , gourmet veg patty , raddish & Gherkins",
           price: 125,
         },
         {
           title: "Pineapple Crunch",
           description:
-            "Savory fusion of a chesse and veg patty , a  succulent pineapple slice & onions , completed by OG's Signature sauces layered on a bun ",
+            "Savory fusion of a Cheese and veg patty , a  succulent pineapple slice & onions , completed by OG's Signature sauces layered on a bun ",
           price: 135,
         },
         {
@@ -438,7 +440,7 @@ export const MENU_DATA: any = {
           price: 145,
         },
         {
-          title: "Mushroom & Chesse Burger",
+          title: "Mushroom & Cheese Burger",
           description:
             "House - Buttered Bun graced with roasted mushrooms , gourment veg patty , Onions , fresh lettuce & a touch of OG's signature sauces",
           price: 155,
@@ -446,13 +448,13 @@ export const MENU_DATA: any = {
         {
           title: "Fat Kid",
           description:
-            "Two melting chesse patties stacked between house-buttered buns with spicy chesse sauces , zesty jalapenos , caramelized onions & cruncy lettuce ",
+            "Two melting Cheese patties stacked between house-buttered buns with spicy Cheese sauces , zesty jalapenos , caramelized onions & cruncy lettuce ",
           price: 175,
         },
       ],
     },
     {
-      title: "Paneer Buger ",
+      title: "Paneer Burger ",
       varients: [
         {
           title: "Mint Paneer",
@@ -461,7 +463,7 @@ export const MENU_DATA: any = {
           price: 115,
         },
         {
-          title: "Fiery Cottage Chesse",
+          title: "Fiery Cottage Cheese",
           description:
             "Artisnal Buns dressed with OG's delectable spicy sauces , a Spicy paneer paty layoured by  Tomatoes Onions and Lettuce",
           price: 135,
@@ -553,7 +555,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "EGG BURGER",
+      title: "Egg Burger",
       varients: [
         {
           title: "Breakfast King",

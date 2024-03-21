@@ -12,10 +12,10 @@ const OurMenu = () => {
   useEffect(() => {
     setMenuItem([isActive]);
   }, [isActive]);
-
+  
   return (
     <div>
-      <div className='relative bg-[url("/images/ourMenu.png")] h-[320px] bg-cover flex justify-center items-center'>
+      <div className='relative bg-[url("https://ik.imagekit.io/designkrunch/theogburger/images/ourMenu.png")] h-[320px] bg-cover flex justify-center items-center'>
         <div className="h-[320px] w-full bg-[rgb(0,0,0,0.2)] absolute"></div>
         <div className="text-white text-[58px] font-bold z-10">Our Menu</div>
         <Img
@@ -62,6 +62,7 @@ const OurMenu = () => {
                     >
                       <MenuCard
                         data={item2}
+                        url={`${isActive}/${item1.title}/${item2.title}`}
                         key={idx2}
                         isNonVeg={
                           item1?.title?.toLowerCase()?.includes("non-veg") ||

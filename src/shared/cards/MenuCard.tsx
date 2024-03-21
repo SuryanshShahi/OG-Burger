@@ -5,11 +5,15 @@ import Image from "next/image";
 const MenuCard = ({
   data,
   isNonVeg,
+  url
 }: {
   data: { title: string; description: string; price: number };
   isNonVeg: boolean;
+  url : string
 }) => {
   const [imageError, setImageError] = useState(false);
+
+  console.log({hello: url})
 
   const handleImageError = () => {
     setImageError(true);
@@ -49,12 +53,13 @@ const MenuCard = ({
         />
       )} */}
       <Img
-          src={`/images/menuItems/${data?.title}.png?tr=w-512,h-512`}
+          // src={`/images/Menu/${url}.png?tr=w-512,h-512`}
+          src='/images/BBQ Chicken.jpg'
           alt={data?.title}
           height={130}
           width={130}
           className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
-          unoptimized
+          // unoptimized
         />
     </div>
   );
