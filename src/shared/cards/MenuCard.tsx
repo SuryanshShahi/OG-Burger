@@ -33,14 +33,15 @@ const MenuCard = ({
         <div className="font-medium">₹ {data?.price}</div>
         <p className="text-xs text-gray-600">{data?.description}</p>
       </div>
-      {/* {!imageError && (
-        <Image
-          src={`https://ik.imagekit.io/designkrunch/theogburger/images/menuItems/${data?.title}.png`}
+      {!imageError && (
+        <Img
+          src={`/images/Menu/${url}.jpg?tr=w-512,h-512`}
           onError={handleImageError}
           alt={data?.title}
           height={130}
           width={130}
           className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
+          unoptimized
         />
       )}
       {imageError && (
@@ -51,15 +52,7 @@ const MenuCard = ({
           width={130}
           className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
         />
-      )} */}
-      <Img
-          src={`/images/Menu/${url}.jpg?tr=w-512,h-512`}
-          alt={data?.title}
-          height={130}
-          width={130}
-          className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
-          unoptimized
-        />
+      )}
     </div>
   );
 };
