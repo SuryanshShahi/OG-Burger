@@ -226,7 +226,7 @@ export const MENU_DATA: any = {
       title: "Pancakes",
       varients: [
         {
-          title: "Breakfast Pancak  e",
+          title: "Breakfast Pancake",
           price: 155,
         },
         {
@@ -454,7 +454,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Paneer Burgers ",
+      title: "Paneer Burgers",
       varients: [
         {
           title: "Mint Paneer",
@@ -503,8 +503,8 @@ export const MENU_DATA: any = {
           price: 85,
         },
         {
-          title: "Hen - sational",
-          Spicy: "(Mild Spicy)",
+          title: "Hen-sational",
+          Spicy: "-Mild Spicy",
           description:
             "Grilled spicy Chicken Patty , spicy sauces , Onions , Tomatoes & Iceberg Lettuce",
           price: 105,
