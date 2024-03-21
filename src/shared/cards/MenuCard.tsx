@@ -53,13 +53,12 @@ const MenuCard = ({
         />
       )} */}
       <Img
-          // src={`/images/Menu/${url}.png?tr=w-512,h-512`}
-          src='/images/BBQ Chicken.jpg'
+          src={`/images/Menu/${url}.png?tr=w-512,h-512`}
           alt={data?.title}
           height={130}
           width={130}
           className="rounded-2xl h-[130px] w-[130px] object-cover object-center"
-          // unoptimized
+          unoptimized
         />
     </div>
   );
