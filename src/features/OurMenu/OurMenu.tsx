@@ -6,6 +6,7 @@ import { MENU_DATA } from "@/utils/MenuItems";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { OgVariants } from "@/utils/framerVarients";
+import { sourcePrefix } from "@/utils/constant";
 const OurMenu = () => {
   const [isActive, setIsActive] = useState<any>(Object.keys(MENU_DATA)?.[0]);
   const [menuItem, setMenuItem] = useState<any>(Object.keys(MENU_DATA));
@@ -15,7 +16,10 @@ const OurMenu = () => {
 
   return (
     <div>
-      <div className='relative bg-[url("/images/ourMenu.png")] h-[320px] bg-cover flex justify-center items-center'>
+      <div
+        className={`relative h-[320px] bg-cover flex justify-center items-center`}
+        style={{ backgroundImage: `url('${sourcePrefix}/images/ourMenu.png')` }}
+      >
         <div className="h-[320px] w-full bg-[rgb(0,0,0,0.2)] absolute"></div>
         <div className="text-white text-[58px] font-bold z-10">Our Menu</div>
         <Img
@@ -35,6 +39,7 @@ const OurMenu = () => {
               data={item}
               key={idx}
               onClick={() => setIsActive(item)}
+              isActive={isActive === item}
               className={
                 isActive === item ? "bg-primary text-white border-primary" : ""
               }

@@ -45,7 +45,7 @@ const Testimonials = () => {
       />
       <div className="flex justify-between font-oswald max-w-[670px] mx-auto">
         {stats?.map((item: any, idx: number) => (
-          <UnleashCard data={item} key={idx} />
+          <UnleashCard data={item} key={idx} styleTitle="!text-base text-center"/>
         ))}
       </div>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-10 place-items-center">

@@ -9,6 +9,7 @@ import useContactUs from "./useContactUs";
 import { errorType, touchedType, inputType } from "@/utils/Functions";
 import { OgVariants } from "@/utils/framerVarients";
 import { motion } from "framer-motion";
+import { sourcePrefix } from "@/utils/constant";
 const ContactUs = () => {
   const [isActive, setIsActive] = useState("");
   useScrollHidden(isActive?.length > 0);
@@ -120,7 +121,12 @@ const ContactUs = () => {
   } = useContactUs();
   return (
     <div>
-      <div className='relative bg-[url("/images/contactBg.png")] h-[320px] bg-cover flex justify-center items-center'>
+      <div
+        className="relative h-[320px] bg-cover flex justify-center items-center"
+        style={{
+          backgroundImage: `url('${sourcePrefix}/images/contactBg.png')`,
+        }}
+      >
         <div className="h-[320px] w-full bg-[rgb(0,0,0,0.3)] absolute"></div>
         <div className="text-white text-center font-prompt sm:text-[58px] text-4xl font-bold z-10">
           Join the OG Family
@@ -193,7 +199,13 @@ const ContactUs = () => {
                 <div className="font-bold">What you get</div>
                 {item?.specs?.map((item1: any, idx1: number) => (
                   <div className="flex items-center gap-x-4" key={idx1}>
-                    <Img src={item1?.icon} alt="specs" width={24} height={24} isLocal/>
+                    <Img
+                      src={item1?.icon}
+                      alt="specs"
+                      width={24}
+                      height={24}
+                      isLocal
+                    />
                     <div>{item1?.value}</div>
                   </div>
                 ))}
@@ -274,6 +286,7 @@ const ContactUs = () => {
                     width={16}
                     alt="heroImage"
                     className="absolute top-3 left-4"
+                    isLocal
                   />
                 </div>
               </div>
@@ -309,11 +322,12 @@ const ContactUs = () => {
                   <p className="text-white text-[10px] text-right">.</p>
                 )}
                 <Img
-                  src="/images/filter.png"
+                  src="/icons/filter.png"
                   height={16}
                   width={16}
                   alt="heroImage"
                   className="absolute top-[14px] left-4"
+                  isLocal
                 />
               </div>
             </div>

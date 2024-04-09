@@ -23,12 +23,12 @@ const UnleashCard = ({
         </div>
       )}
       {data?.value && (
-        <div className="text-primary text-[42px] leading-[42px] text-center">
+        <div className="text-primary text-[28px] sm:text-[42px] leading-[42px] text-center">
           {data?.value}
         </div>
       )}
       <div>
-        <div className="text-xl leading-5">{data?.title}</div>
+        <div className="sm:text-xl leading-5 text-center">{data?.title}</div>
         {data?.description && (
           <p className="leading-6 text-gray-600 mt-2">{data?.description}</p>
         )}
