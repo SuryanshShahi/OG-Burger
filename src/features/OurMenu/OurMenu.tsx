@@ -67,6 +67,7 @@ const OurMenu = () => {
                     >
                       <MenuCard
                         data={item2}
+                        url={`${isActive}/${item1.title}/${item2.title}`}
                         key={idx2}
                         isNonVeg={
                           item1?.title?.toLowerCase()?.includes("non-veg") ||

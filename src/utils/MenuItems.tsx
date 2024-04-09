@@ -1,11 +1,11 @@
 export const MENU_DATA: any = {
   Beverages: [
     {
-      title: "MOCKTAILS",
+      title: "Mocktails",
       icon: "/images/menuItems/Death By Chocolate.png",
       varients: [
         {
-          title: "Cucumber Lime ",
+          title: "Cucumber Lime",
           price: 115,
         },
         {
@@ -13,15 +13,15 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Watermelon mojito",
+          title: "Watermelon Mojito",
           price: 125,
         },
         {
-          title: "Minty mango",
+          title: "Minty Mango",
           price: 125,
         },
         {
-          title: "Blue Ocean ",
+          title: "Blue Ocean",
           price: 135,
         },
         {
@@ -29,7 +29,7 @@ export const MENU_DATA: any = {
           price: 135,
         },
         {
-          title: "Sunset glory",
+          title: "Sunset Glory",
           price: 135,
         },
         {
@@ -40,7 +40,7 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "SHAKES",
+      title: "Shakes",
       varients: [
         {
           title: "Vanilla Shake",
@@ -51,7 +51,7 @@ export const MENU_DATA: any = {
           price: 125,
         },
         {
-          title: "Banana Carmel Shake",
+          title: "Banana Caramel Shake",
           price: 135,
         },
         {
@@ -63,29 +63,29 @@ export const MENU_DATA: any = {
           price: 135,
         },
         {
-          title: "Mixed Berry Shake ",
+          title: "Mixed Berry Shake",
           price: 145,
         },
         {
-          title: "Death By Chocolate",
+          title: "Death By Chocolate Shake",
           price: 145,
         },
       ],
     },
 
     {
-      title: "COFFEE",
+      title: "Coffee",
       varients: [
         {
-          title: "Classic Hot Coffee (Hot)",
+          title: "Classic Hot Coffee-Hot",
           price: 75,
         },
         {
-          title: "Caramel Coffee (Hot)",
+          title: "Caramel Coffee-Hot",
           price: 85,
         },
         {
-          title: "Hazelnut Coffee (Hot)",
+          title: "Hazelnut Coffee-Hot",
           price: 85,
         },
         {
@@ -104,18 +104,18 @@ export const MENU_DATA: any = {
     },
 
     {
-      title: "TEA",
+      title: "Tea",
       varients: [
         {
-          title: "Green Tea (Hot)",
+          title: "Green Tea-Hot",
           price: 45,
         },
         {
-          title: "Masala Tea (Hot)",
+          title: "Masala Tea-Hot",
           price: 65,
         },
         {
-          title: "English Breakfast Tea (Hot)",
+          title: "English Breakfast Tea-Hot",
           price: 65,
         },
         {
@@ -133,13 +133,13 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Pizza: [
+  Pizzas: [
     {
-      title: "Veg PIZZA",
+      title: "Veg Pizza",
       icon: "/images/menuItems/pizza.png",
       varients: [
         {
-          title: "Margherita Pizza",
+          title: "Margherita",
           price: 185,
         },
         {
@@ -147,18 +147,18 @@ export const MENU_DATA: any = {
           price: 215,
         },
         {
-          title: "BBQ Panner ",
+          title: "BBQ Paneer",
           price: 235,
         },
         {
-          title: "Chipotle Panner",
+          title: "Chipotle Paneer",
           price: 235,
         },
       ],
     },
 
     {
-      title: "Non-veg PIZZA",
+      title: "Non Veg Pizza",
       varients: [
         {
           title: "Chicken Carne",
@@ -171,13 +171,14 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Waffles: [
+
+  Desserts: [
     {
-      title: "WAFFLES",
+      title: "Waffles",
       icon: "/images/menuItems/waffels.png",
       varients: [
         {
-          title: "Mapple Syrup Waffle",
+          title: "Maple Syrup Waffle",
           price: 175,
         },
         {
@@ -185,7 +186,7 @@ export const MENU_DATA: any = {
           price: 185,
         },
         {
-          title: "Nutellea & Banana Waffle",
+          title: "Nutella & Banana Waffle",
           price: 205,
         },
         {
@@ -198,74 +199,34 @@ export const MENU_DATA: any = {
         },
       ],
     },
-  ],
-  Sandwich: [
+
     {
-      title: "Veg SANDWHICH",
-      icon: "/images/menuItems/sandwich.png",
+      title: "Cheesecakes",
       varients: [
         {
-          title: "Classic Veg Sandwhich",
-          price: 115,
+          title: "Caramel Cheese Cake",
+          price: 225,
         },
         {
-          title: "Bombay Masala Sandwhich",
-          price: 125,
+          title: "Strawberry Cheese Cake",
+          price: 225,
         },
         {
-          title: "Jalapeno Chesse Sandwhich",
-          price: 135,
+          title: "Belgium Chocolate Cheese Cake",
+          price: 235,
         },
         {
-          title: "Paneer Tikka Sanwhich",
-          price: 155,
+          title: "Lotus Biscoff Cheese Cake",
+          price: 235,
         },
       ],
     },
 
     {
-      title: "Non-veg SANDWHICH",
-      varients: [
-        {
-          title: "Scramled Egg Sandwhich",
-          price: 145,
-        },
-        {
-          title: "Chicken Tikka Sandwhich",
-          price: 165,
-        },
-      ],
-    },
-  ],
-  Cheesecake: [
-    {
-      title: "CHESSECAKE",
-      varients: [
-        {
-          title: "Caramel Chesse Cake",
-          price: 225,
-        },
-        {
-          title: "Stawberry Chesse Cake",
-          price: 225,
-        },
-        {
-          title: "Belgium Chocolate Chesse Cake",
-          price: 235,
-        },
-        {
-          title: "Lotus Biscoff Chesse Cake",
-          price: 235,
-        },
-      ],
-    },
-  ],
-  Pancakes: [
-    {
       title: "Pancakes",
       varients: [
         {
-          title: "Breakfast Panckae",
+          title: "Breakfast Pancake",
           price: 155,
         },
         {
@@ -283,7 +244,48 @@ export const MENU_DATA: any = {
       ],
     },
   ],
-  Appetizer: [
+
+
+  Sandwich: [
+    {
+      title: "Veg Sandwich",
+      icon: "/images/menuItems/sandwich.png",
+      varients: [
+        {
+          title: "Classic Veg Sandwich",
+          price: 115,
+        },
+        {
+          title: "Bombay Masala Sandwich",
+          price: 125,
+        },
+        {
+          title: "Jalapeno Cheese Sandwich",
+          price: 135,
+        },
+        {
+          title: "Paneer Tikka Sandwich",
+          price: 155,
+        },
+      ],
+    },
+
+    {
+      title: "Non-Veg Sandwich",
+      varients: [
+        {
+          title: "Scrambled Egg Sandwich",
+          price: 145,
+        },
+        {
+          title: "Chicken Tikka Sandwich",
+          price: 165,
+        },
+      ],
+    },
+  ],
+
+  Appetizers: [
     {
       title: "Veg Appetizer",
       icon: "/images/menuItems/fries.png",
@@ -301,14 +303,14 @@ export const MENU_DATA: any = {
           price: 115,
         },
         {
-          title: "Chesse Coins",
+          title: "Cheese Coins",
           price: 125,
         },
       ],
     },
 
     {
-      title: "Non-veg Appetizer",
+      title: "Non-Veg Appetizer",
       varients: [
         {
           title: "Chicken Popcorns",
@@ -328,41 +330,6 @@ export const MENU_DATA: any = {
         },
       ],
     },
-  ],
-  "Wraps and Fries": [
-    {
-      title: "Veg WRAPS",
-      icon: "/images/menuItems/tortilla.png",
-
-      varients: [
-        {
-          title: "Grilled Onion & Peppers",
-          price: 135,
-        },
-        {
-          title: "BBQ Paneer",
-          price: 165,
-        },
-        {
-          title: "Spicy Paneer",
-          price: 165,
-        },
-      ],
-    },
-
-    {
-      title: "Non-veg Wraps",
-      varients: [
-        {
-          title: "BBQ Chicken",
-          price: 185,
-        },
-        {
-          title: "Peri-Peri Chicken",
-          price: 185,
-        },
-      ],
-    },
 
     {
       title: "Fries",
@@ -376,27 +343,64 @@ export const MENU_DATA: any = {
           price: 105,
         },
         {
-          title: "Chesse Loaded Fries",
+          title: "Cheese Loaded Fries",
           price: 135,
         },
       ],
     },
   ],
-  "Veg Burger & Paneer Burger": [
+
+  Wraps: [
     {
-      title: "Veg Burger",
+      title: "Veg Wraps",
+      icon: "/images/menuItems/tortilla.png",
+
+      varients: [
+        {
+          title: "Grilled Onion & Peppers",
+          price: 135,
+        },
+        {
+          title: "BBQ Paneer",
+          price: 165,
+        },
+        {
+          title: "BBQ Spicy Paneer",
+          price: 165,
+        },
+      ],
+    },
+
+    {
+      title: "Non-Veg Wraps",
+      varients: [
+        {
+          title: "BBQ Chicken",
+          price: 185,
+        },
+        {
+          title: "Peri-Peri Chicken",
+          price: 185,
+        },
+      ],
+    },
+
+  ],
+  Burgers: [
+    {
+      title: "Veg Burgers",
       icon: "/images/menuItems/burger.png",
       varients: [
         {
           title: "Aloo Tikki",
           description:
-            "Crispy Aloo Tikki Cutlet patty , Topped with Pickeles ,  Chessy Sauce , Tomatoes & Onions in a buttery bun",
+            "Crispy Aloo Tikki Cutlet patty , Topped with Pickeles ,  Cheesy Sauce , Tomatoes & Onions in a buttery bun",
           price: 35,
         },
         {
           title: "Potato Crunch",
           description:
-            "Herb Patty , Chesse Sauce & Fresh Toppings nestled on a Butter Toasted Bun",
+            "Herb Patty , Cheese Sauce & Fresh Toppings nestled on a Butter Toasted Bun",
           price: 65,
         },
         {
@@ -412,7 +416,7 @@ export const MENU_DATA: any = {
           price: 95,
         },
         {
-          title: "Jalapeno Kick",
+          title: "Jalapeno Kick Sunrise",
           description:
             "Fresh Iceberg Lettuce, Tomatoes , Compliment Juicy Patties , with fresh onions,zesty jalapenos",
           price: 105,
@@ -420,13 +424,13 @@ export const MENU_DATA: any = {
         {
           title: "Route 66",
           description:
-            "Artisnal Bun dressed in chesse sauce , Jalapeno , Red Paprika , gourmet veg patty , raddish & Gherkins",
+            "Artisnal Bun dressed in Cheese sauce , Jalapeno , Red Paprika , gourmet veg patty , raddish & Gherkins",
           price: 125,
         },
         {
           title: "Pineapple Crunch",
           description:
-            "Savory fusion of a chesse and veg patty , a  succulent pineapple slice & onions , completed by OG's Signature sauces layered on a bun ",
+            "Savory fusion of a Cheese and veg patty , a  succulent pineapple slice & onions , completed by OG's Signature sauces layered on a bun ",
           price: 135,
         },
         {
@@ -436,7 +440,7 @@ export const MENU_DATA: any = {
           price: 145,
         },
         {
-          title: "Mushroom & Chesse Burger",
+          title: "Mushroom & Cheese Burger",
           description:
             "House - Buttered Bun graced with roasted mushrooms , gourment veg patty , Onions , fresh lettuce & a touch of OG's signature sauces",
           price: 155,
@@ -444,13 +448,13 @@ export const MENU_DATA: any = {
         {
           title: "Fat Kid",
           description:
-            "Two melting chesse patties stacked between house-buttered buns with spicy chesse sauces , zesty jalapenos , caramelized onions & cruncy lettuce ",
+            "Two melting Cheese patties stacked between house-buttered buns with spicy Cheese sauces , zesty jalapenos , caramelized onions & cruncy lettuce ",
           price: 175,
         },
       ],
     },
     {
-      title: "Paneer Buger ",
+      title: "Paneer Burgers",
       varients: [
         {
           title: "Mint Paneer",
@@ -459,7 +463,7 @@ export const MENU_DATA: any = {
           price: 115,
         },
         {
-          title: "Fiery Cottage Chesse",
+          title: "Fiery Cottage Cheese",
           description:
             "Artisnal Buns dressed with OG's delectable spicy sauces , a Spicy paneer paty layoured by  Tomatoes Onions and Lettuce",
           price: 135,
@@ -471,7 +475,7 @@ export const MENU_DATA: any = {
           price: 145,
         },
         {
-          title: "Peri-fect Paneer",
+          title: "Peri-Fect Paneer",
           description:
             "Peri-peri marinated paneer patty, topped with lettuce , tomatoes, onion & spicy sauces",
           price: 155,
@@ -485,7 +489,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Chicken Burger",
+      title: "Chicken Burgers",
       varients: [
         {
           title: "Chicken Boom",
@@ -499,8 +503,8 @@ export const MENU_DATA: any = {
           price: 85,
         },
         {
-          title: "Hen - sational",
-          Spicy: "(Mild Spicy)",
+          title: "Hen-sational",
+          Spicy: "-Mild Spicy",
           description:
             "Grilled spicy Chicken Patty , spicy sauces , Onions , Tomatoes & Iceberg Lettuce",
           price: 105,
@@ -551,7 +555,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "EGG BURGER",
+      title: "Egg Burgers",
       varients: [
         {
           title: "Breakfast King",
@@ -576,7 +580,7 @@ export const MENU_DATA: any = {
   ],
   Pastas: [
     {
-      title: "Veg Pastas",
+      title: "Veg Pasta",
       icon: "/images/menuItems/pasta.png",
       varients: [
         {
@@ -606,7 +610,7 @@ export const MENU_DATA: any = {
       ],
     },
     {
-      title: "Non-veg Pastas",
+      title: "Non-Veg Pasta",
       varients: [
         {
           title: "Alfredo Non-Veg",
