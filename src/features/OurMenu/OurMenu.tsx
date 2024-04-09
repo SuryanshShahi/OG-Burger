@@ -33,7 +33,7 @@ const OurMenu = () => {
       </div>
 
       <div className="container mx-auto py-24 px-5">
-        <div className="flex gap-x-6 overflow-x-scroll mb-10 p-2">
+        <div className="flex gap-x-6 overflow-x-scroll mb-10 p-2 xl:justify-center">
           {Object.keys(MENU_DATA)?.map((item: any, idx: number) => (
             <Tabs
               data={item}
