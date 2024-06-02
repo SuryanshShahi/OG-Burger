@@ -59,7 +59,7 @@ const OurMenu = () => {
                   </div>
                   {item1?.varients?.map((item2: any, idx2: number) => (
                     <motion.div
-                      viewport={{ once: false }}
+                      viewport={{ once: true }}
                       variants={OgVariants.CONTAINER}
                       whileInView="show"
                       initial="hidden"

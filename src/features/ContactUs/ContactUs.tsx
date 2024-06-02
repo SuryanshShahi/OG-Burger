@@ -88,7 +88,7 @@ const ContactUs = () => {
     {
       title: "THE CLASSIC OG",
       image: "/images/franchise2.png",
-      tag: "High Street, Malls, Buainess Huba",
+      tag: "High Street, Malls, Business Hubs",
       specs: [
         { icon: "/icons/area.png", value: "400-800 sq. ft." },
         { icon: "/icons/price.png", value: "Franchise fees 5 Lakhs" },

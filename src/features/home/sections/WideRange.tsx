@@ -12,49 +12,49 @@ const WideRange = () => {
       title: "Burger Bliss",
       description:
         "Dive into perfection with our gourmet burgers—crafted with love and premium ingredients",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Burgers/Paneer%20Burgers/Paneer%20Tikka.jpg",
     },
     {
       title: "Fry Heaven",
       description:
         "Dive into fry perfection! Crispy fries paired with an array of sauces—crave for more.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Appetizers/Fries/Cheese%20Loaded%20Fries.jpg",
     },
     {
       title: "Wrap It Up",
       description:
         "Bursting with fresh, vibrant ingredients, our wraps are a delicious blend of health & taste.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Wraps/Veg%20Wraps/BBQ%20Paneer.jpg",
     },
     {
       title: "Pasta Paradise",
       description:
         "Experience pasta perfection—every bite, a journey through the heart of Italy.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Pastas/Veg%20Pasta/Pomodoro%20Veg.jpg",
     },
     {
       title: "Pizza Pleasures",
       description:
         "Savor artisanal pizzas, handpicked ingredients, baked to perfection for an authentic taste.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Pizzas/Non%20Veg%20Pizza/Chicken%20&%20Peppers.jpg",
     },
     {
       title: "Waffle Wonderland",
       description:
         "Elevate your sweet tooth with scrumptious waffles—symphony of taste and texture.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Desserts/Waffles/Brownie%20Waffle.jpg",
     },
     {
       title: "Beverage Bonanza",
       description:
         "Quench your thirst with refreshing mocktails, shakes, aromatic coffee, and soothing teas.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Beverages/Mocktails/Watermelon%20Mojito.jpg",
     },
     {
       title: "Sweet Endings ",
       description:
         " Indulge sweet cravings—heavenly cheesecakes, fluffy pancakes with a touch of sweetness.",
-      image: "/images/rosaVeg.png",
+      image: "/images/Menu/Desserts/Cheesecakes/Caramel%20Cheese%20Cake.jpg",
     },
   ];
   const router = useRouter();

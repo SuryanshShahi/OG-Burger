@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="bg-[#03060E] px-5 pt-16 text-[#F9FAFB]">
         <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-12 sm:gap-10 gap-y-10">
-            <div className="lg:col-span-4 sm:col-span-8 col-span-12 order-1">
+            <div className="lg:col-span-10 sm:col-span-8 col-span-12 order-1">
               <Img
                 src={"/icons/logoRed.png"}
                 isLocal
@@ -54,7 +54,7 @@ const Footer = () => {
                 )
               )}
             </div>
-            <div className="list-none space-y-3 lg:col-span-4 sm:col-span-8 col-span-12 sm:order-3 order-4">
+            {/* <div className="list-none space-y-3 lg:col-span-4 sm:col-span-8 col-span-12 sm:order-3 order-4">
               <div className="text-primary text-2xl mb-4 font-oswald">
                 Contact Us
               </div>
@@ -62,8 +62,7 @@ const Footer = () => {
                 <div>
                   <div className="text-lg font-oswald">Address</div>
                   <p className="font-medium text-[#fafafa]">
-                    CB4, DLF Cybercity, DLF Phase 2, Sector 24, Gurugram,
-                    Haryana 122022
+                    21, Opp, Huda Park Rd, Patel Nagar, Bhiwani, Haryana 127021
                   </p>
                 </div>
                 <div>
@@ -77,8 +76,8 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="list-none space-y-3 lg:col-span-2 sm:col-span-4 col-span-6 sm:order-4 order-3">
+            </div> */}
+            {/* <div className="list-none space-y-3 lg:col-span-2 sm:col-span-4 col-span-6 sm:order-4 order-3">
               <div className="text-primary text-2xl mb-4 font-oswald">
                 Opening Hours
               </div>
@@ -92,19 +91,19 @@ const Footer = () => {
                   <p className="font-medium text-[#fafafa]">11 AM - 12 PM</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex font-prompt sm:flex-row font-medium text-gray-300 flex-col sm:justify-between items-center gap-y-4 py-10">
             <div className="">
-              Copyright © 2023 The OG Burger. All rights reserved
+              Copyright © 2024 The OG Burger. All rights reserved
             </div>
-            <div className="gap-x-2 flex items-center">
+            {/* <div className="gap-x-2 flex items-center">
               <div>Disclaimer</div>
               <div className="w-[1px] h-3 bg-white" />
               <div>Privacy Policy</div>
               <div className="w-[1px] h-3 bg-white" />
               <div>Terms Of Use</div>
-            </div>
+            </div> */}
             <div className="flex gap-x-3">
               {socials?.map((item, idx) => (
                 <div

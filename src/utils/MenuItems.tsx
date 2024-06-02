@@ -1,391 +1,4 @@
 export const MENU_DATA: any = {
-  Beverages: [
-    {
-      title: "Mocktails",
-      icon: "/images/menuItems/Death By Chocolate.png",
-      varients: [
-        {
-          title: "Cucumber Lime",
-          price: 115,
-        },
-        {
-          title: "Virgin Mojito",
-          price: 125,
-        },
-        {
-          title: "Watermelon Mojito",
-          price: 125,
-        },
-        {
-          title: "Minty Mango",
-          price: 125,
-        },
-        {
-          title: "Blue Ocean",
-          price: 135,
-        },
-        {
-          title: "Blue Berry Bash",
-          price: 135,
-        },
-        {
-          title: "Sunset Glory",
-          price: 135,
-        },
-        {
-          title: "Pina Colada",
-          price: 145,
-        },
-      ],
-    },
-
-    {
-      title: "Shakes",
-      varients: [
-        {
-          title: "Vanilla Shake",
-          price: 115,
-        },
-        {
-          title: "Chocolate Shake",
-          price: 125,
-        },
-        {
-          title: "Banana Caramel Shake",
-          price: 135,
-        },
-        {
-          title: "Oreo Nutella Shake",
-          price: 135,
-        },
-        {
-          title: "Lotus Biscoff Shake",
-          price: 135,
-        },
-        {
-          title: "Mixed Berry Shake",
-          price: 145,
-        },
-        {
-          title: "Death By Chocolate Shake",
-          price: 145,
-        },
-      ],
-    },
-
-    {
-      title: "Coffee",
-      varients: [
-        {
-          title: "Classic Hot Coffee-Hot",
-          price: 75,
-        },
-        {
-          title: "Caramel Coffee-Hot",
-          price: 85,
-        },
-        {
-          title: "Hazelnut Coffee-Hot",
-          price: 85,
-        },
-        {
-          title: "Classic Cold Coffee",
-          price: 125,
-        },
-        {
-          title: "Caramel Cold Coffee",
-          price: 135,
-        },
-        {
-          title: "Hazelnut Cold Coffee",
-          price: 135,
-        },
-      ],
-    },
-
-    {
-      title: "Tea",
-      varients: [
-        {
-          title: "Green Tea-Hot",
-          price: 45,
-        },
-        {
-          title: "Masala Tea-Hot",
-          price: 65,
-        },
-        {
-          title: "English Breakfast Tea-Hot",
-          price: 65,
-        },
-        {
-          title: "Lemon Iced Tea",
-          price: 115,
-        },
-        {
-          title: "Peach Iced Tea",
-          price: 125,
-        },
-        {
-          title: "Blueberry Iced Tea",
-          price: 125,
-        },
-      ],
-    },
-  ],
-  Pizzas: [
-    {
-      title: "Veg Pizza",
-      icon: "/images/menuItems/pizza.png",
-      varients: [
-        {
-          title: "Margherita",
-          price: 185,
-        },
-        {
-          title: "Garden Fresh",
-          price: 215,
-        },
-        {
-          title: "BBQ Paneer",
-          price: 235,
-        },
-        {
-          title: "Chipotle Paneer",
-          price: 235,
-        },
-      ],
-    },
-
-    {
-      title: "Non Veg Pizza",
-      varients: [
-        {
-          title: "Chicken Carne",
-          price: 265,
-        },
-        {
-          title: "Chicken & Peppers",
-          price: 275,
-        },
-      ],
-    },
-  ],
-
-  Desserts: [
-    {
-      title: "Waffles",
-      icon: "/images/menuItems/waffels.png",
-      varients: [
-        {
-          title: "Maple Syrup Waffle",
-          price: 175,
-        },
-        {
-          title: "Brownie Waffle",
-          price: 185,
-        },
-        {
-          title: "Nutella & Banana Waffle",
-          price: 205,
-        },
-        {
-          title: "Triple Chocolate Waffle",
-          price: 215,
-        },
-        {
-          title: "Add on Ice Cream ",
-          price: 25,
-        },
-      ],
-    },
-
-    {
-      title: "Cheesecakes",
-      varients: [
-        {
-          title: "Caramel Cheese Cake",
-          price: 225,
-        },
-        {
-          title: "Strawberry Cheese Cake",
-          price: 225,
-        },
-        {
-          title: "Belgium Chocolate Cheese Cake",
-          price: 235,
-        },
-        {
-          title: "Lotus Biscoff Cheese Cake",
-          price: 235,
-        },
-      ],
-    },
-
-    {
-      title: "Pancakes",
-      varients: [
-        {
-          title: "Breakfast Pancake",
-          price: 155,
-        },
-        {
-          title: "Blueberries Pancake",
-          price: 165,
-        },
-        {
-          title: "Nutella Pancake",
-          price: 175,
-        },
-        {
-          title: "Lotus Biscoff Pancake",
-          price: 185,
-        },
-      ],
-    },
-  ],
-
-
-  Sandwich: [
-    {
-      title: "Veg Sandwich",
-      icon: "/images/menuItems/sandwich.png",
-      varients: [
-        {
-          title: "Classic Veg Sandwich",
-          price: 115,
-        },
-        {
-          title: "Bombay Masala Sandwich",
-          price: 125,
-        },
-        {
-          title: "Jalapeno Cheese Sandwich",
-          price: 135,
-        },
-        {
-          title: "Paneer Tikka Sandwich",
-          price: 155,
-        },
-      ],
-    },
-
-    {
-      title: "Non-Veg Sandwich",
-      varients: [
-        {
-          title: "Scrambled Egg Sandwich",
-          price: 145,
-        },
-        {
-          title: "Chicken Tikka Sandwich",
-          price: 165,
-        },
-      ],
-    },
-  ],
-
-  Appetizers: [
-    {
-      title: "Veg Appetizer",
-      icon: "/images/menuItems/fries.png",
-      varients: [
-        {
-          title: "Chilli Garlic Pops",
-          price: 95,
-        },
-        {
-          title: "Veggie Fingers",
-          price: 105,
-        },
-        {
-          title: "Veg Nuggets",
-          price: 115,
-        },
-        {
-          title: "Cheese Coins",
-          price: 125,
-        },
-      ],
-    },
-
-    {
-      title: "Non-Veg Appetizer",
-      varients: [
-        {
-          title: "Chicken Popcorns",
-          price: 125,
-        },
-        {
-          title: "Chicken Nuggets",
-          price: 125,
-        },
-        {
-          title: "Chicken Strips",
-          price: 245,
-        },
-        {
-          title: "Chicken Box",
-          price: 545,
-        },
-      ],
-    },
-
-    {
-      title: "Fries",
-      varients: [
-        {
-          title: "Salted Fries",
-          price: 95,
-        },
-        {
-          title: "Peri-Peri Fries",
-          price: 105,
-        },
-        {
-          title: "Cheese Loaded Fries",
-          price: 135,
-        },
-      ],
-    },
-  ],
-
-  Wraps: [
-    {
-      title: "Veg Wraps",
-      icon: "/images/menuItems/tortilla.png",
-
-      varients: [
-        {
-          title: "Grilled Onion & Peppers",
-          price: 135,
-        },
-        {
-          title: "BBQ Paneer",
-          price: 165,
-        },
-        {
-          title: "BBQ Spicy Paneer",
-          price: 165,
-        },
-      ],
-    },
-
-    {
-      title: "Non-Veg Wraps",
-      varients: [
-        {
-          title: "BBQ Chicken",
-          price: 185,
-        },
-        {
-          title: "Peri-Peri Chicken",
-          price: 185,
-        },
-      ],
-    },
-
-  ],
   Burgers: [
     {
       title: "Veg Burgers",
@@ -578,6 +191,147 @@ export const MENU_DATA: any = {
       ],
     },
   ],
+
+  Wraps: [
+    {
+      title: "Veg Wraps",
+      icon: "/images/menuItems/tortilla.png",
+
+      varients: [
+        {
+          title: "Grilled Onion & Peppers",
+          price: 135,
+        },
+        {
+          title: "BBQ Paneer",
+          price: 165,
+        },
+        {
+          title: "BBQ Spicy Paneer",
+          price: 165,
+        },
+      ],
+    },
+
+    {
+      title: "Non-Veg Wraps",
+      varients: [
+        {
+          title: "BBQ Chicken",
+          price: 185,
+        },
+        {
+          title: "Peri-Peri Chicken",
+          price: 185,
+        },
+      ],
+    },
+  ],
+
+  Appetizers: [
+    {
+      title: "Veg Appetizer",
+      icon: "/images/menuItems/fries.png",
+      varients: [
+        {
+          title: "Chilli Garlic Pops",
+          price: 95,
+        },
+        {
+          title: "Veggie Fingers",
+          price: 105,
+        },
+        {
+          title: "Veg Nuggets",
+          price: 115,
+        },
+        {
+          title: "Cheese Coins",
+          price: 125,
+        },
+      ],
+    },
+
+    {
+      title: "Non-Veg Appetizer",
+      varients: [
+        {
+          title: "Chicken Popcorns",
+          price: 125,
+        },
+        {
+          title: "Chicken Nuggets",
+          price: 125,
+        },
+        {
+          title: "Chicken Strips",
+          price: 245,
+        },
+        {
+          title: "Chicken Box",
+          price: 545,
+        },
+      ],
+    },
+
+    {
+      title: "Fries",
+      varients: [
+        {
+          title: "Salted Fries",
+          price: 95,
+        },
+        {
+          title: "Peri-Peri Fries",
+          price: 105,
+        },
+        {
+          title: "Cheese Loaded Fries",
+          price: 135,
+        },
+      ],
+    },
+  ],
+
+  Pizzas: [
+    {
+      title: "Veg Pizza",
+      icon: "/images/menuItems/pizza.png",
+      varients: [
+        {
+          title: "Margherita",
+          price: 185,
+        },
+        {
+          title: "Garden Fresh",
+          price: 215,
+        },
+        {
+          title: "BBQ Paneer",
+          price: 235,
+        },
+        {
+          title: "Chipotle Paneer",
+          price: 235,
+        },
+      ],
+    },
+
+    {
+      title: "Non Veg Pizza",
+      varients: [
+        {
+          title: "Chicken Carne",
+          price: 265,
+        },
+        {
+          title: "Chicken & Peppers",
+          price: 275,
+        },
+      ],
+    },
+  ],
+
   Pastas: [
     {
       title: "Veg Pasta",
@@ -635,6 +389,253 @@ export const MENU_DATA: any = {
           description:
             "Pasta tossed with Fresh Tomatoes, Olive oil , basil and Italian Herbs",
           price: 235,
+        },
+      ],
+    },
+  ],
+
+  Sandwich: [
+    {
+      title: "Veg Sandwich",
+      icon: "/images/menuItems/sandwich.png",
+      varients: [
+        {
+          title: "Classic Veg Sandwich",
+          price: 115,
+        },
+        {
+          title: "Bombay Masala Sandwich",
+          price: 125,
+        },
+        {
+          title: "Jalapeno Cheese Sandwich",
+          price: 135,
+        },
+        {
+          title: "Paneer Tikka Sandwich",
+          price: 155,
+        },
+      ],
+    },
+
+    {
+      title: "Non-Veg Sandwich",
+      varients: [
+        {
+          title: "Scrambled Egg Sandwich",
+          price: 145,
+        },
+        {
+          title: "Chicken Tikka Sandwich",
+          price: 165,
+        },
+      ],
+    },
+  ],
+
+  Desserts: [
+    {
+      title: "Waffles",
+      icon: "/images/menuItems/waffels.png",
+      varients: [
+        {
+          title: "Maple Syrup Waffle",
+          price: 175,
+        },
+        {
+          title: "Brownie Waffle",
+          price: 185,
+        },
+        {
+          title: "Nutella & Banana Waffle",
+          price: 205,
+        },
+        {
+          title: "Triple Chocolate Waffle",
+          price: 215,
+        },
+        {
+          title: "Add on Ice Cream ",
+          price: 25,
+        },
+      ],
+    },
+
+    {
+      title: "Cheesecakes",
+      varients: [
+        {
+          title: "Caramel Cheese Cake",
+          price: 225,
+        },
+        {
+          title: "Strawberry Cheese Cake",
+          price: 225,
+        },
+        {
+          title: "Belgium Chocolate Cheese Cake",
+          price: 235,
+        },
+        {
+          title: "Lotus Biscoff Cheese Cake",
+          price: 235,
+        },
+      ],
+    },
+
+    {
+      title: "Pancakes",
+      varients: [
+        {
+          title: "Breakfast Pancake",
+          price: 155,
+        },
+        {
+          title: "Blueberries Pancake",
+          price: 165,
+        },
+        {
+          title: "Nutella Pancake",
+          price: 175,
+        },
+        {
+          title: "Lotus Biscoff Pancake",
+          price: 185,
+        },
+      ],
+    },
+  ],
+
+  Beverages: [
+    {
+      title: "Mocktails",
+      icon: "/images/menuItems/Death By Chocolate.png",
+      varients: [
+        {
+          title: "Cucumber Lime",
+          price: 115,
+        },
+        {
+          title: "Virgin Mojito",
+          price: 125,
+        },
+        {
+          title: "Watermelon Mojito",
+          price: 125,
+        },
+        {
+          title: "Minty Mango",
+          price: 125,
+        },
+        {
+          title: "Blue Ocean",
+          price: 135,
+        },
+        {
+          title: "Blue Berry Bash",
+          price: 135,
+        },
+        {
+          title: "Sunset Glory",
+          price: 135,
+        },
+        {
+          title: "Pina Colada",
+          price: 145,
+        },
+      ],
+    },
+
+    {
+      title: "Shakes",
+      varients: [
+        {
+          title: "Vanilla Shake",
+          price: 115,
+        },
+        {
+          title: "Chocolate Shake",
+          price: 125,
+        },
+        {
+          title: "Banana Caramel Shake",
+          price: 135,
+        },
+        {
+          title: "Oreo Nutella Shake",
+          price: 135,
+        },
+        {
+          title: "Lotus Biscoff Shake",
+          price: 135,
+        },
+        {
+          title: "Mixed Berry Shake",
+          price: 145,
+        },
+        {
+          title: "Death By Chocolate Shake",
+          price: 145,
+        },
+      ],
+    },
+
+    {
+      title: "Coffee",
+      varients: [
+        {
+          title: "Classic Hot Coffee-Hot",
+          price: 75,
+        },
+        {
+          title: "Caramel Coffee-Hot",
+          price: 85,
+        },
+        {
+          title: "Hazelnut Coffee-Hot",
+          price: 85,
+        },
+        {
+          title: "Classic Cold Coffee",
+          price: 125,
+        },
+        {
+          title: "Caramel Cold Coffee",
+          price: 135,
+        },
+        {
+          title: "Hazelnut Cold Coffee",
+          price: 135,
+        },
+      ],
+    },
+
+    {
+      title: "Tea",
+      varients: [
+        {
+          title: "Green Tea-Hot",
+          price: 45,
+        },
+        {
+          title: "Masala Tea-Hot",
+          price: 65,
+        },
+        {
+          title: "English Breakfast Tea-Hot",
+          price: 65,
+        },
+        {
+          title: "Lemon Iced Tea",
+          price: 115,
+        },
+        {
+          title: "Peach Iced Tea",
+          price: 125,
+        },
+        {
+          title: "Blueberry Iced Tea",
+          price: 125,
         },
       ],
     },

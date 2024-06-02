@@ -16,8 +16,7 @@ const Map = () => {
               <div className="md:space-y-2">
                 <div className="md:text-lg font-bold">Our Address</div>
                 <p className="font-medium lg:text-base text-sm">
-                  CB4, DLF Cybercity, DLF Phase 2, Sector 24, Gurugram, Haryana
-                  122022
+                  21, Opp, Huda Park Rd, Patel Nagar, Bhiwani, Haryana 127021
                 </p>
               </div>
               <div className="md:space-y-2">

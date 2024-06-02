@@ -15,23 +15,23 @@ const Testimonials = () => {
       title: "Burger Bliss Beyond Compare!",
       description:
         "At The OG Burger, the burger game is taken to a whole new level. You won't find a more delightful, tasty, and soul-satisfying experience anywhere else.",
-      authorImage: "/icons/author.png",
-      author: "Nikhil Tyagi",
+      authorImage: "/icons/author1.png",
+      author: "Rajvir Verma",
       rating: [1, 1, 1, 1, 1],
     },
     {
       title: "FLAVORFUL FIESTA",
       description:
         "The OG Burger: Where every bite's an adventure into the world of pitawiches, mocktails, and mouthwatering burgers, all in a cozy, dreamy ambiance!",
-      authorImage: "/icons/author.png",
+      authorImage: "/icons/author2.png",
       author: "Sarabjeet Singh",
-      rating: [1, 1, 1, 1],
+      rating: [1, 1, 1, 1, 1],
     },
     {
       title: "Menu Magic Unleashed",
       description:
         "The OG Burger isn't just about burgers; it's a symphony of flavors where pitawiches, mocktails, waffles, pizzas, and mesmerizing atmosphere",
-      authorImage: "/icons/author.png",
+      authorImage: "/icons/author3.png",
       author: "Aisha Jain",
       rating: [1, 1, 1, 1, 1],
     },
