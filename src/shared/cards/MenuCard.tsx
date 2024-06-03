@@ -1,26 +1,23 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import Img from "../Img";
 import Image from "next/image";
 
 const MenuCard = ({
   data,
   isNonVeg,
-  url
+  url,
 }: {
   data: { title: string; description: string; price: number };
   isNonVeg: boolean;
-  url : string
+  url: string;
 }) => {
   const [imageError, setImageError] = useState(false);
-
-  console.log({hello: url})
 
   const handleImageError = () => {
     setImageError(true);
   };
 
   return (
-
     <div className="flex gap-x-5 font-prompt max-w-[564px] justify-between">
       <div className="space-y-2">
         <Img
@@ -30,7 +27,7 @@ const MenuCard = ({
           height={16}
           width={16}
         />
-        
+
         <div className="text-[18px] font-semibold">{data?.title}</div>
         <div className="font-medium">₹ {data?.price}</div>
         <p className="text-xs text-gray-600">{data?.description}</p>
@@ -58,7 +55,6 @@ const MenuCard = ({
         />
       )}
     </div>
-
   );
 };
 

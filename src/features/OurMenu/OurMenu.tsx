@@ -7,13 +7,21 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { OgVariants } from "@/utils/framerVarients";
 import { sourcePrefix } from "@/utils/constant";
+import { useRouter } from "next/router";
 const OurMenu = () => {
-  const [isActive, setIsActive] = useState<any>(Object.keys(MENU_DATA)?.[0]);
+  const router = useRouter();
+  const selectedTab = router?.query?.item;
   const [menuItem, setMenuItem] = useState<any>(Object.keys(MENU_DATA));
   useEffect(() => {
-    setMenuItem([isActive]);
-  }, [isActive]);
-
+    if (selectedTab) {
+      setMenuItem([selectedTab]);
+    } else {
+      router.replace(`/menu?item=${Object.keys(MENU_DATA)?.[0]}`);
+    }
+  }, [router?.query]);
+  useEffect(() => {
+    selectedTab && window.scrollTo(0, 400);
+  }, []);
   return (
     <div>
       <div
@@ -38,10 +46,12 @@ const OurMenu = () => {
             <Tabs
               data={item}
               key={idx}
-              onClick={() => setIsActive(item)}
-              isActive={isActive === item}
+              onClick={() => router.replace(`/menu?item=${item}`)}
+              isActive={selectedTab === item}
               className={
-                isActive === item ? "bg-primary text-white border-primary" : ""
+                selectedTab === item
+                  ? "bg-primary text-white border-primary"
+                  : ""
               }
             />
           ))}
@@ -67,7 +77,7 @@ const OurMenu = () => {
                     >
                       <MenuCard
                         data={item2}
-                        url={`${isActive}/${item1.title}/${item2.title}`}
+                        url={`${selectedTab}/${item1.title}/${item2.title}`}
                         key={idx2}
                         isNonVeg={
                           item1?.title?.toLowerCase()?.includes("non-veg") ||

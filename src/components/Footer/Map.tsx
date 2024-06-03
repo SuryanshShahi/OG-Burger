@@ -1,34 +1,60 @@
-import React from "react";
+import Img from "@/shared/Img";
 import { FaStar } from "react-icons/fa";
+import OrderByPhone from "./orderByPhone";
+import Link from "next/link";
 
 const Map = () => {
+  const details = [
+    {
+      icon: "/icons/map.png",
+      label: "Our Address",
+      value: "21, Opp, Huda Park Rd, Patel Nagar, Bhiwani, Haryana 127021",
+      action:
+        "map:21, Opp, Huda Park Rd, Patel Nagar, Bhiwani, Haryana 127021",
+    },
+    {
+      icon: "/icons/call.png",
+      label: "Call us at",
+      value: "+91 70111 61527",
+      action: "tel:+91 70111 61527",
+    },
+    {
+      icon: "/icons/sms.png",
+      label: "Email Us At",
+      value: "contact@theogburger.co.in",
+      action: "mailto:contact@theogburger.co.in",
+    },
+  ];
   return (
     <div className="md:flex items-end">
       <div className="md:absolute bg-white mx-[10px] mb-16 rounded-3xl md:p-6 p-4 md:space-y-8 space-y-4 max-w-[732px]">
-        <div className="md:text-5xl text-3xl font-oswald md:leading-[48px]">
+        <div className="md:text-5xl text-3xl font-oswald md:leading-[48px] uppercase">
           Get in touch with us
         </div>
-        <div className="h-[1px] bg-gray-100" />
+        <OrderByPhone />
+        <div className="h-[1px] bg-[#F3F4F6]" />
         <div className="grid md:grid-cols-2 md:gap-12 gap-6">
           <div className="space-y-4">
             <div className="md:text-2xl text-xl font-oswald">Contact INFO</div>
             <div className="space-y-6 font-prompt">
-              <div className="md:space-y-2">
-                <div className="md:text-lg font-bold">Our Address</div>
-                <p className="font-medium lg:text-base text-sm">
-                  21, Opp, Huda Park Rd, Patel Nagar, Bhiwani, Haryana 127021
-                </p>
-              </div>
-              <div className="md:space-y-2">
-                <div className="md:text-lg font-bold">Email Us At</div>
-                <p className="font-medium lg:text-base text-sm">
-                  contact@theogburger.co.in
-                </p>
-              </div>
-              <div className="font-oswald md:text-2xl text-xl">
-                <div className="leading-6">FRANCHISE INQUIRY</div>
-                <p className="text-[#4B5563]">098219 23920</p>
-              </div>
+              {details?.map((item, idx) => (
+                <Link href={item?.action} className="flex gap-x-2" key={idx}>
+                  <Img
+                    alt=""
+                    height={32}
+                    width={32}
+                    src={item?.icon}
+                    isLocal
+                    className="h-8 w-8"
+                  />
+                  <div className="md:space-y-2">
+                    <div className="md:text-lg font-bold">{item?.label}</div>
+                    <p className="font-medium lg:text-base text-sm">
+                      {item?.value}
+                    </p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
           <div className="space-y-11">
@@ -51,7 +77,7 @@ const Map = () => {
               <div className="font-oswald">CUSTOMER RATINGS</div>
               <div className="md:space-y-2">
                 <div className="flex gap-x-2 items-center">
-                  {[1, 1, 1, 1, 1]?.map((item, idx) => (
+                  {[1, 1, 1, 1, 1]?.map((_, idx) => (
                     <FaStar color="#ffc106" key={idx} size={20} />
                   ))}
                   <div className="font-oswald ml-4 leading-6 mt-[6px]">
