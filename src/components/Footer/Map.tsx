@@ -1,7 +1,7 @@
 import Img from "@/shared/Img";
 import { FaStar } from "react-icons/fa";
-import OrderByPhone from "./orderByPhone";
 import Link from "next/link";
+import OrderByPhone from "./OrderByPhone";
 
 const Map = () => {
   const details = [
