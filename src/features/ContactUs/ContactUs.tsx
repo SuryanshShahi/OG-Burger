@@ -160,6 +160,7 @@ const ContactUs = () => {
               <UnleashCard
                 data={item}
                 key={idx}
+                styleTitle="text-start"
                 className="!flex-row gap-x-4"
               />
             ))}

@@ -94,6 +94,7 @@ const Testimonials = () => {
                 width={38}
                 height={38}
                 className="rounded-full"
+                isLocal
               />
               <div className="font-bold leading-4 font-prompt">
                 {item?.author}

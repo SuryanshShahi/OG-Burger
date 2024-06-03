@@ -4,9 +4,11 @@ import Img from "../Img";
 const UnleashCard = ({
   data,
   className,
+  styleTitle,
 }: {
   data: any;
   className?: string;
+  styleTitle?: string;
 }) => {
   return (
     <div className={`flex flex-col font-prompt gap-y-2 ${className}`}>
@@ -28,7 +30,9 @@ const UnleashCard = ({
         </div>
       )}
       <div>
-        <div className="sm:text-xl leading-5 text-center">{data?.title}</div>
+        <div className={`sm:text-xl leading-5 text-center ${styleTitle}`}>
+          {data?.title}
+        </div>
         {data?.description && (
           <p className="leading-6 text-gray-600 mt-2">{data?.description}</p>
         )}

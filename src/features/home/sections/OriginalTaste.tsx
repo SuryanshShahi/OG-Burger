@@ -54,6 +54,7 @@ const OriginalTaste = () => {
   ];
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -76,6 +77,10 @@ const OriginalTaste = () => {
       observer.disconnect();
     };
   }, []);
+  useEffect(() => {
+    visible && setIsActive(visible);
+  }, [visible]);
+
   return (
     <div className="bg-[#222] py-28 px-5 relative" ref={ref}>
       <Img
@@ -111,7 +116,7 @@ const OriginalTaste = () => {
                 height={item?.height}
                 width={item?.width}
                 className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
-                  visible ? "-mt-4" : "-mt-12"
+                  isActive ? "-mt-4" : visible ? "-mt-4" : "-mt-12"
                 } ${item?.className}`}
               />
             ))}
@@ -148,7 +153,7 @@ const OriginalTaste = () => {
                   height={item?.height}
                   width={item?.width}
                   className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
-                    visible ? "-mt-4" : "-mt-12"
+                    isActive ? "-mt-4" : visible ? "-mt-4" : "-mt-12"
                   } ${item?.className}`}
                 />
               ))}

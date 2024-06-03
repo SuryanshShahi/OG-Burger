@@ -11,19 +11,17 @@ const HeroSection = () => {
             alt="phone"
             width={254}
             height={254}
-            className="absolute lg:h-[254px] animate-pulse lg:w-[254px] md:h-[180px] md:w-[180px] h-[120px] w-[120px] lg:-top-32 lg:-left-28 md:-left-20 md:-top-[100px] -left-12 -top-16"
+            className="absolute z-10 lg:h-[254px] animate-pulse lg:w-[254px] md:h-[180px] md:w-[180px] h-[120px] w-[120px] lg:-top-32 lg:-left-28 md:-left-20 md:-top-[100px] -left-12 -top-16"
           />
-          <div className="max-w-[416px] font-hyberBlaster">
-            <div className="flex lg:text-[140px] sm:text-[100px] text-[60px] leading-[60px] lg:leading-[140px] sm:leading-[100px]">
-              JOIN <div>THE</div>
-            </div>
-            <div className="lg:text-[180px] sm:text-[140px] text-[100px] leading-[50px] lg:leading-[120px] sm:leading-[80px]">
-              BURGER
-            </div>
-            <div className="lg:text-[105px] sm:text-[65px] text-[25px] leading-[46px] lg:leading-[106px] sm:leading-[66px]">
-              REVOLUTION
-            </div>
-          </div>
+          <Img
+            src={"/icons/hero_text.svg"}
+            isLocal
+            alt="phone"
+            width={416}
+            height={370}
+            className="md:h-[370px] h-[200px] md:w-[416px] w-fit"
+          />
+
           <h4 className="lg:text-[56px] sm:text-4xl text-2xl sm:leading-[56px] lg:mt-[54px] pr-4 mt-5 sm:mt-10 font-oswald">
             COME FOR THE BURGERS, STAY FOR THE VIBE
           </h4>
