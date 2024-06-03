@@ -77,6 +77,7 @@ const ContactUs = () => {
       title: "THE OG Kiosk",
       image: "/images/franchise1.png",
       tag: "Malls, Office, Food Courts, Metro",
+      price: "10lacs",
       specs: [
         { icon: "/icons/area.png", value: "100-300 sq. ft." },
         { icon: "/icons/price.png", value: "Franchise fees 3 Lakhs" },
@@ -89,6 +90,7 @@ const ContactUs = () => {
       title: "THE CLASSIC OG",
       image: "/images/franchise2.png",
       tag: "High Street, Malls, Business Hubs",
+      price: "18lacs",
       specs: [
         { icon: "/icons/area.png", value: "400-800 sq. ft." },
         { icon: "/icons/price.png", value: "Franchise fees 5 Lakhs" },
@@ -101,6 +103,7 @@ const ContactUs = () => {
       title: "THE PREMIUM OG",
       image: "/images/franchise3.png",
       tag: "Large Malls, High Street, Crowded Places",
+      price: "1Cr",
       specs: [
         { icon: "/icons/area.png", value: "1000-1500 sq. ft." },
         { icon: "/icons/price.png", value: "Franchise fees 5 Lakhs" },
@@ -191,7 +194,9 @@ const ContactUs = () => {
               />
               <div className="text-xs">
                 Set-Up Starts{" "}
-                <span className="text-[32px] leading-6 font-bold">₹1Cr</span>
+                <span className="text-[32px] leading-6 font-bold">
+                  ₹{item?.price}
+                </span>
               </div>
               <div className="py-[6px] !mt-4 px-3 rounded-r-full text-white text-sm text-end bg-[linear-gradient(90deg,rgba(0,0,0,0.00)_1.41%,#000_23.26%)]">
                 Large Malls, High Street, Crowded Places
