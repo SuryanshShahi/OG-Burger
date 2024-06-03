@@ -199,7 +199,7 @@ const ContactUs = () => {
                 </span>
               </div>
               <div className="py-[6px] !mt-4 px-3 rounded-r-full text-white text-sm text-end bg-[linear-gradient(90deg,rgba(0,0,0,0.00)_1.41%,#000_23.26%)]">
-                Large Malls, High Street, Crowded Places
+                {item?.tag}
               </div>
               <div className="space-y-4">
                 <div className="font-bold">What you get</div>
