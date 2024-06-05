@@ -115,7 +115,7 @@ const OriginalTaste = () => {
                 alt="original"
                 height={item?.height}
                 width={item?.width}
-                className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
+                className={`mx-auto group-hover:-mt-12 -mt-12 ease-linear duration-500 ${
                   isActive ? "-mt-4" : visible ? "-mt-4" : "-mt-12"
                 } ${item?.className}`}
               />
@@ -152,7 +152,7 @@ const OriginalTaste = () => {
                   alt="original"
                   height={item?.height}
                   width={item?.width}
-                  className={`mx-auto group-hover:-mt-12 -mt-12 duration-500 ${
+                  className={`mx-auto group-hover:-mt-12 ease-linear -mt-12 duration-500 ${
                     isActive ? "-mt-4" : visible ? "-mt-4" : "-mt-12"
                   } ${item?.className}`}
                 />

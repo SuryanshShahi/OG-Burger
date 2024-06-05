@@ -2,7 +2,7 @@ import Img from "@/shared/Img";
 import React from "react";
 const HeroSection = () => {
   return (
-    <div className="bg-primary font-oswald text-white !h-[calc(100vh-100px)] 2xl:!h-[800px] xl:flex flex-col justify-center relative">
+    <div className="bg-primary font-oswald text-white sm:!h-[calc(100vh-100px)] h-max-content 2xl:!h-[800px] xl:flex flex-col justify-center relative">
       <div className="lg:flex max-w-[1200px] mx-auto w-full items-end h-full lg:pt-0 pt-20">
         <div className="relative my-auto z-10 ml-10 mx-auto lg:mx-0 lg:max-w-full sm:max-w-[480px]">
           <Img
@@ -32,7 +32,7 @@ const HeroSection = () => {
             alt="phone"
             width={720}
             height={740}
-            className="max-h-[520px] max-w-[505px] lg:max-h-[720px] lg:max-w-[740px] !object-cover absolute right-0 bottom-0"
+            className="max-h-[520px] max-w-[505px] lg:max-h-[720px] lg:max-w-[740px] !object-cover sm:absolute right-0 bottom-0"
           />
           <Img
             src={"/images/fries.png"}
