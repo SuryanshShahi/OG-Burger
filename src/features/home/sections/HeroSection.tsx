@@ -32,7 +32,7 @@ const HeroSection = () => {
             alt="phone"
             width={720}
             height={740}
-            className="max-h-[520px] max-w-[505px] lg:max-h-[720px] lg:max-w-[740px] !object-cover sm:absolute right-0 bottom-0"
+            className="max-h-[520px] sm:max-w-[505px] lg:max-h-[720px] lg:max-w-[740px] !object-cover sm:absolute right-0 bottom-0"
           />
           <Img
             src={"/images/fries.png"}
