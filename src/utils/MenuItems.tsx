@@ -7,7 +7,7 @@ export const MENU_DATA: any = {
         {
           title: "Aloo Tikki",
           description:
-            "Crispy Aloo Tikki Cutlet patty , Topped with Pickeles ,  Cheesy Sauce , Tomatoes & Onions in a buttery bun",
+            "Crispy Aloo Tikki Cutlet patty , Topped with Pickles ,  Cheesy Sauce , Tomatoes & Onions in a buttery bun",
           price: 35,
         },
         {
@@ -72,13 +72,13 @@ export const MENU_DATA: any = {
         {
           title: "Mint Paneer",
           description:
-            "Toasted Buns Housing marinated Paneer , Tomatoes , onions , Lettuce & dizzeled with OG's  signature sauces ",
+            "Toasted Buns Housing marinated Paneer , Tomatoes , onions , Lettuce & drizzled with OG's  signature sauces ",
           price: 115,
         },
         {
           title: "Fiery Cottage Cheese",
           description:
-            "Artisnal Buns dressed with OG's delectable spicy sauces , a Spicy paneer paty layoured by  Tomatoes Onions and Lettuce",
+            "Artisanal Buns dressed with OG's delectable spicy sauces , a Spicy paneer patty layered by  Tomatoes Onions and Lettuce",
           price: 135,
         },
         {
@@ -185,7 +185,7 @@ export const MENU_DATA: any = {
         },
         {
           title: "Jalapeno Kick Sunrise",
-          description: "Doiuble Egg Patty, briny Jalapeno/ Lettuce & Onions",
+          description: "Double Egg Patty, briny Jalapeno/ Lettuce & Onions",
           price: 125,
         },
       ],
