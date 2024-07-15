@@ -20,7 +20,7 @@ const OrderByPhone = () => {
           <div className="font-medium">Order by Phone</div>
           <Link
             href="tel:98219 23920"
-            className="font-oswald text-red-600 cursor-pointer font-medium"
+            className="font-oswald text-red-600 cursor-pointer font-small md:font-medium"
           >
             098219 23920
           </Link>

@@ -33,7 +33,7 @@ const WideRange = () => {
       title: "Pasta Paradise",
       description:
         "Experience pasta perfection—every bite, a journey through the heart of Italy.",
-      image: "/images/Menu/Pastas/Veg%20Pasta/Pomodoro%20Veg.jpg",
+      image: "/images/Menu/Pastas/Veg%20Pastas/Pomodoro%20Veg.jpg",
       slug: "Pastas",
     },
     {
