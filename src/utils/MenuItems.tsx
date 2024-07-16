@@ -5,9 +5,9 @@ export const MENU_DATA: any = {
       icon: "/images/menuItems/burger.png",
       varients: [
         {
-          title: "Aloo Tikki",
+          title: "Aaloo Tikki",
           description:
-            "Crispy Aloo Tikki Cutlet patty , Topped with Pickles ,  Cheesy Sauce , Tomatoes & Onions in a buttery bun",
+            "Crispy Aaloo Tikki Cutlet patty, Topped with Pickles,  Cheesy Sauce, Tomatoes & Onions in a buttery bun",
           price: 35,
         },
         {
@@ -47,7 +47,7 @@ export const MENU_DATA: any = {
           price: 135,
         },
         {
-          title: "Wrath of Burger",
+          title: "Wrath Of Burger",
           description:
             "Spicy veg patty , Spicy sauces, Red paprika , Onions , Iceberg , jalapenos in a perfectly toasted bun ",
           price: 145,
@@ -509,7 +509,7 @@ export const MENU_DATA: any = {
   Beverages: [
     {
       title: "Mocktails",
-      icon: "/images/menuItems/Death By Chocolate.png",
+      icon: "/images/menuItems/beverages.png",
       varients: [
         {
           title: "Cucumber Lime",
