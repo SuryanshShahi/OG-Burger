@@ -103,7 +103,7 @@ const WideRange = () => {
         ))}
       </div>
       <div className="flex sm:flex-row flex-col items-center justify-center gap-10">
-        <Button className="font-semibold bg-primary hover:!bg-primary/80 flex items-center gap-x-2 h-12 rounded-3xl px-6">
+        <Button className="font-semibold bg-primary hover:!bg-primary/80 flex items-center gap-x-2 h-12 rounded-3xl px-6" onClick={() => router.push('https://theogburger.petpooja.com')}>
           <div className="h-5 w-5 bg-white rounded-full flex items-center justify-center">
             <Img
               src="/icons/arrowDiagonal.png"

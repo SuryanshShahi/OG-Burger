@@ -27,7 +27,7 @@ const OrderByPhone = () => {
         </div>
       </div>
       <div className="font-medium text-xl text-gray-600">Or</div>
-      <Button onClick={() => router.push("/menu")}>See Menu</Button>
+      <Button onClick={() => router.push("https://theogburger.petpooja.com")}>Order Online</Button>
     </div>
   );
 };

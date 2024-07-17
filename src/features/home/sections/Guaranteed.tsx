@@ -2,6 +2,7 @@ import Img from "@/shared/Img";
 import Heading from "@/shared/Modal/Heading";
 import GuaranteeCard from "@/shared/cards/GuaranteeCard";
 import React from "react";
+import { useRouter } from "next/router";
 
 const Guaranteed = () => {
   const data = [
@@ -12,6 +13,7 @@ const Guaranteed = () => {
     },
     { image: "/icons/houseCity.png", title: "Delivery on your doorstep" },
   ];
+  const router = useRouter();
   return (
     <div className="bg-[#222] pt-24 px-5 relative">
       <div className="flex container mx-auto relative">
@@ -40,7 +42,7 @@ const Guaranteed = () => {
               <GuaranteeCard data={item} key={idx} />
             ))}
 
-            <div className="bg-[linear-gradient(to_right,#EB1C24,#851014,#851008,#851000,#851008,#851014,#EB1C24)] bg-[length:200%_auto] animate-gradient p-4 rounded-2xl text-center flex flex-col justify-center text-white leading-[39px] space-y-2 w-full min-[1300px]:max-w-[164px] max-w-[180px] text-xl font-semibold">
+            <div className="bg-[linear-gradient(to_right,#EB1C24,#851014,#851008,#851000,#851008,#851014,#EB1C24)] bg-[length:200%_auto] animate-gradient p-4 rounded-2xl text-center flex flex-col justify-center text-white leading-[39px] space-y-2 w-full min-[1300px]:max-w-[164px] max-w-[180px] text-xl font-semibold" onClick={() => router.push('https://theogburger.petpooja.com')}>
               Order Now
             </div>
           </div>
