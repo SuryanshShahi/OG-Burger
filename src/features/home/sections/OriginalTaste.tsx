@@ -55,7 +55,6 @@ const OriginalTaste = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  console.log({ adsdsad: window?.innerWidth > 768 ? 0.5 : 0.25 });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,7 +77,7 @@ const OriginalTaste = () => {
     return () => {
       observer.disconnect();
     };
-  }, [ref.current]);
+  }, []);
   useEffect(() => {
     visible && setIsActive(visible);
   }, [visible]);
