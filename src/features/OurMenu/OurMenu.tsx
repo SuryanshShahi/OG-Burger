@@ -22,6 +22,8 @@ const OurMenu = () => {
   useEffect(() => {
     selectedTab && window.scrollTo(0, 400);
   }, []);
+  console.log({ selectedTab });
+
   return (
     <div>
       <div
@@ -57,40 +59,41 @@ const OurMenu = () => {
           ))}
         </div>
         <div className="md:space-y-8 space-y-12 lg:columns-2 gap-x-10 place-items-center">
-          {menuItem?.map((item: any, idx: number) => (
-            <div className="flex flex-col items-center gap-y-8" key={idx}>
-              {MENU_DATA[item]?.map((item1: any, idx1: number) => (
-                <div
-                  className="space-y-8 lg:w-full max-[640px]:w-full"
-                  key={idx1}
-                >
-                  <div className="text-[32px] font-oswald self-start mb-8 leading-8">
-                    {item1?.title}
-                  </div>
-                  {item1?.varients?.map((item2: any, idx2: number) => (
-                    <motion.div
-                      viewport={{ once: true }}
-                      variants={OgVariants.CONTAINER}
-                      whileInView="show"
-                      initial="hidden"
-                      key={idx2}
-                    >
-                      <MenuCard
-                        data={item2}
-                        url={`${selectedTab}/${item1.title}/${item2.title}`}
+          {selectedTab &&
+            menuItem?.map((item: any, idx: number) => (
+              <div className="flex flex-col items-center gap-y-8" key={idx}>
+                {MENU_DATA[item]?.map((item1: any, idx1: number) => (
+                  <div
+                    className="space-y-8 lg:w-full max-[640px]:w-full"
+                    key={idx1}
+                  >
+                    <div className="text-[32px] font-oswald self-start mb-8 leading-8">
+                      {item1?.title}
+                    </div>
+                    {item1?.varients?.map((item2: any, idx2: number) => (
+                      <motion.div
+                        viewport={{ once: true }}
+                        variants={OgVariants.CONTAINER}
+                        whileInView="show"
+                        initial="hidden"
                         key={idx2}
-                        isNonVeg={
-                          item1?.title?.toLowerCase()?.includes("non-veg") ||
-                          item1?.title?.toLowerCase()?.includes("chicken") ||
-                          item1?.title?.toLowerCase()?.includes("egg")
-                        }
-                      />
-                    </motion.div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          ))}
+                      >
+                        <MenuCard
+                          data={item2}
+                          url={`${selectedTab}/${item1.title}/${item2.title}`}
+                          key={idx2}
+                          isNonVeg={
+                            item1?.title?.toLowerCase()?.includes("non-veg") ||
+                            item1?.title?.toLowerCase()?.includes("chicken") ||
+                            item1?.title?.toLowerCase()?.includes("egg")
+                          }
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ))}
         </div>
         <Button className="font-semibold !bg-[#121212] hover:!bg-[#121212]/80 flex items-center gap-x-2 h-12 rounded-3xl px-6 mx-auto mt-10">
           <Img

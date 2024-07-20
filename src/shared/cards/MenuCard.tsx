@@ -16,6 +16,7 @@ const MenuCard = ({
   const handleImageError = () => {
     setImageError(true);
   };
+  console.log({ url });
 
   return (
     <div className="flex gap-x-5 font-prompt max-w-[564px] justify-between">
