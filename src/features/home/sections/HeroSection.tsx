@@ -39,7 +39,7 @@ const HeroSection = () => {
             alt="phone"
             width={319}
             height={552}
-            className="absolute lg:bottom[5%] bottom-0 sm:right-[10%] right-[15%] h[200px] lg:w-[400px] w-[319px] object-bottom"
+            className="absolute lg:bottom[5%] bottom-0 sm:right-[10%] right-[15%] lg:w-[400px] w-[319px] object-bottom"
           />
         </div>
       </div>
