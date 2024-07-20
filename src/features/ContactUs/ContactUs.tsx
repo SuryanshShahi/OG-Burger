@@ -158,7 +158,7 @@ const ContactUs = () => {
             className="text-center"
           />
 
-          <div className="grid md:grid-cols-2 gap-10 justify-center">
+          {/* <div className="grid md:grid-cols-2 gap-10 justify-center">
             {data?.map((item: any, idx: number) => (
               <UnleashCard
                 data={item}
@@ -167,7 +167,7 @@ const ContactUs = () => {
                 className="!flex-row gap-x-4"
               />
             ))}
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.div

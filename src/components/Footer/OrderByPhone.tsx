@@ -20,14 +20,14 @@ const OrderByPhone = () => {
           <div className="font-medium">Order by Phone</div>
           <Link
             href="tel:98219 23920"
-            className="font-oswald text-red-600 cursor-pointer font-medium"
+            className="font-oswald text-red-600 cursor-pointer font-small md:font-medium"
           >
-            098219 23920
+            09821923920
           </Link>
         </div>
       </div>
       <div className="font-medium text-xl text-gray-600">Or</div>
-      <Button onClick={() => router.push("/menu")}>See Menu</Button>
+      <Button onClick={() => router.push("https://theogburger.petpooja.com")}>Order Online</Button>
     </div>
   );
 };

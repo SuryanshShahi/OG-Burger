@@ -16,7 +16,7 @@ const Navbar = ({
   const { isActive } = useNavbar();
   const navItems = [
     { name: "HOME", link: "/" },
-    { name: "MENU", link: "/menu" },
+    { name: "DINE-IN MENU", link: "/menu" },
     { name: "FRANCHISE", link: "/contact" },
     { name: "CONTACT US", link: "#footer" },
   ];
@@ -58,7 +58,7 @@ const Navbar = ({
                 {item?.name}
               </div>
             ))}
-            <Button className={isActive ? "bg-primary text-white" : btnClass}>
+            <Button className={isActive ? "bg-primary text-white" : btnClass} onClick={() => router.push('https://theogburger.petpooja.com')}>
               Order Online
             </Button>
           </div>

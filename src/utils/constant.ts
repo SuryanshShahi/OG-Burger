@@ -1,1 +1,1 @@
-export const sourcePrefix = "https://ik.imagekit.io/designkrunch/theogburger";
+export const sourcePrefix = "https://ik.imagekit.io/theogburger";
